@@ -3,7 +3,7 @@ aliases: Game 220 Class Notes
 ---
 [Source](https://github.com/nharsch/Game-220)
 
-# Game 220 Class Notes
+# Game 231 Class Notes
 Every Friday, 7:10pm - 9:10pm
 
 ## Resources
@@ -16,7 +16,7 @@ Every Friday, 7:10pm - 9:10pm
 	- pass: game220
 	- **Only for sick / quarantined students**
 - [headphone recommendation](https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_4?crid=2C2M7AJUMIX7&keywords=audio+technica&qid=1642132525&sprefix=audio+technica%2Caps%2C312&sr=8-4)
-- [[Audition Resources]]
+- [[Adobe Audition Resources]]
 - [[Audio Effects Guide]]
 - [[Pro Tools Resources]]
 - [APU Equipment Rental Site](https://www.apu.edu/vpa/cinematicarts/equipmentfacilities)
@@ -28,30 +28,29 @@ Every Friday, 7:10pm - 9:10pm
 	- deprecated
 
 ## Weeks
-- 1/15 [[Game 220 Week 01]] - Sound Basics
-- 1/21 [[Game 220 Week 02]] - Audio Editing
-- 1/28 Week 3 - Game Jam, no class
-- 2/4 [[Game 220 Week 04]] - Advanced Audio Editing
-- 2/11 [[Game 220 Week 05]] - Catch Up
-- 2/18 [[Game 220 Week 06]] - Recording Audio, Signal Flow
+- 1/11 [[Game 231 Week 01]] - Sound Basics
+- 1/18 [[Game 231 Week 02]] - Audio Editing
+- 1/25 Week 3  [[Game 220 Week 03]] - Advanced Audio Editing
+- 2/1 [[Game 231/docs/Game 220 Week 04]] - Catch Up
+- 2/8 
+- 2/15 [[Game 220 Week 06]] - Recording Audio, Signal Flow
 	- VOICE OVER exercise assigned
-- 2/25 [[Game 220 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
+- 2/22 [[Game 220 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
 	- VOICE OVER exercise due. 
 	- GAME SCENE project assigned
-- 3/4 [[Game 220 Week 08]] - Composing, Game Music, Pro Tools Work
+- 3/1 [[Game 220 Week 08]] - Composing, Game Music, Pro Tools Work
 - 3/11 Week 9 - Spring Break, no class
-- 3/18 [[Game 220 Week 10]] - Intro to Game Engines
+- 3/15 [[Game 220 Week 10]] - Intro to Game Engines
 	- GAME SCENE project due
 	- FOOTSTEPS assigned
-- 3/25 [[Game 220 Week 11]] - Unity, Basic Audio in Unity
-- 4/1 [[Game 220 Week 12]] - Middleware and FMOD
+- 3/22 [[Game 220 Week 11]] - Unity, Basic Audio in Unity
+- 3/29 [[Game 220 Week 12]] - Middleware and FMOD
 	- FOOSTEPTS DUE
 	- FINAL PROJECT assigned
-- 4/8 [[Game 220 Week 13]] - Lab time with Unity and FMOD 
-- 4/15 Week 10 - Easter Break, no class
-- 4/22 [[Game 220 Week 15]] - Jobs in Game Audio
-- 4/29 [[Game 220 Week 16]] - Project Time
-- 5/6 [[Game 220 Week 17 - Finals]]
+- 4/5 [[Game 220 Week 13]] - Lab time with Unity and FMOD 
+- 4/12 [[Game 220 Week 15]]
+- 4/19  [[Game 220 Week 16]] - Jobs in Game Audio
+- 4/26 [[Game 231/docs/Game 220 Week 17 - Finals]] - Project Time
 
 ## Assignments
 ### Exercise 1: Game Clip Audio Assesment - Due week 2 

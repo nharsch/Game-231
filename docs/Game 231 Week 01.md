@@ -1,5 +1,5 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 02|Next Week]]
+- [[Game 231 Week 02|Next Week]]
 
 # Week 1 - 1/14/22
 

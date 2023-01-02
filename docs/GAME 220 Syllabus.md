@@ -16,7 +16,7 @@ Every Friday, 7:10pm - 9:10pm
 	- pass: game220
 	- **Only for sick / quarantined students**
 - [headphone recommendation](https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_4?crid=2C2M7AJUMIX7&keywords=audio+technica&qid=1642132525&sprefix=audio+technica%2Caps%2C312&sr=8-4)
-- [[Audition Resources]]
+- [[Adobe Audition Resources]]
 - [[Audio Effects Guide]]
 - [[Pro Tools Resources]]
 - [APU Equipment Rental Site](https://www.apu.edu/vpa/cinematicarts/equipmentfacilities)
@@ -28,11 +28,11 @@ Every Friday, 7:10pm - 9:10pm
 	- deprecated
 
 ## Weeks
-- 1/15 [[Game 220 Week 01]] - Sound Basics
-- 1/21 [[Game 220 Week 02]] - Audio Editing
+- 1/15 [[Game 231 Week 01]] - Sound Basics
+- 1/21 [[Game 231 Week 02]] - Audio Editing
 - 1/28 Week 3 - Game Jam, no class
-- 2/4 [[Game 220 Week 04]] - Advanced Audio Editing
-- 2/11 [[Game 220 Week 05]] - Catch Up
+- 2/4 [[Game 220 Week 03]] - Advanced Audio Editing
+- 2/11 [[Game 231/docs/Game 220 Week 04]] - Catch Up
 - 2/18 [[Game 220 Week 06]] - Recording Audio, Signal Flow
 	- VOICE OVER exercise assigned
 - 2/25 [[Game 220 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)

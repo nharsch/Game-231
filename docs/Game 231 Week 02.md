@@ -1,6 +1,6 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 01|Previous Week]]
-- [[Game 220 Week 04|Next Week]]
+- [[Game 231 Week 01|Previous Week]]
+- [[Game 220 Week 03|Next Week]]
 
 # Week 2 - 1/21/22
 - Exercise 1 Due
@@ -11,7 +11,7 @@ Game Audio Technology (sampling; MIDI; audio compression, middleware)
 ### Week 1 Lecture Quick Review
 _5 minutes_
 
-- Quick [[Game 220 Week 01]] review
+- Quick [[Game 231 Week 01]] review
 	- what is sound?
 	- what is amplitude?
 	- what is frequency?

@@ -1,4 +1,4 @@
-- Lecture notes [[Game 220 Week 02#Hands on with destructive audio editing - Audition]] [[Game 220 Week 04#Advanced Sound Editing Concepts]]
+- Lecture notes [[Game 231 Week 02#Hands on with destructive audio editing - Audition]] [[Game 220 Week 03#Advanced Sound Editing Concepts]]
 
 ## Sound Not Playing?
 The media lab machines have a known issue where Audition will not play back sound. No sound will play, and the playback head won't move. If you run into this problem, try this:
