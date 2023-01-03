@@ -6087,6 +6087,13 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         // reset all drawers and containers
         all_drawers = [];
         all_containers = [];
+        active_keyboard = false;
+
+        animated_drawers = [];
+        model_drawers = [];
+        units_drawers = [];
+        all_keyboards = [];
+
         let canvas_containers = document.getElementsByClassName('canvas_container');
         for (var i=canvas_containers.length; i--;){
             canvas_containers[i].remove();
