@@ -1,35 +1,175 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css" integrity="sha512-A5PKBHoJQHdKjxpwyV+VhMsK7L3MMV1Ch2++rS0bn3xX8+5qJb3WpPvwJH1eqb6iMRtotfiOO7Jhl1qQ02Rwuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/black.min.css" integrity="sha512-DKeDMgkMDBNgY3g8T6H6Ft5cB7St0LOh5d69BvETIcTrP0E3d3KhANTMs5QOTMnenXy6JVKz/tENmffCLeXPiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/beige.min.css" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/sound.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
-            <h2 class="r-fit-text">Game 231</h2>
-            <h2 class="r-fit-text">Sound Design For Games</h2>
-        </section>
-        <section data-markdown>
-            <textarea data-template>
-                ## Slide 1
-                A paragraph with some text and a [link](http://hakim.se).
-                ---
-                ## Slide 2
-                ---
-                ## Slide 3
-            </textarea>
-        </section>
-        <section>Slide 2</section>
-        <section>Slide 2</section>
+
+
+<section>
+    <h1 class="r-fit-text">Game 231</h1>
+    <h2 class="r-fit-text">Sound Design For Games</h2>
+    <h2 class="r-fit-text">Week 1 - Intro to Sound as material</h2>
+</section>
+<section data-markdown>
+<textarea data-template>
+# About the Course
+---
+## About Me
+- Theatrical Sound Designer and Composer
+    - Sometimes films, Sometimes games
+- [nigelharsch.com](http://nigelharsch.com)
+- Software Developer
+---
+## About You
+- what are your interests?
+- what are your goals for the course?
+---
+## Main Goals
+---
+### Basics of Sound
+- What it is
+- How to talk about it
+- Sound as a material
+---
+### Working with Sound
+- Sourcing
+    - Where to find sounds
+    - how to record sounds
+    - how to generate (synthesize) completely new sounds
+- Editing
+    - Adobe Audition
+- Recording and Mixing
+    - Pro Tools
+    - Recording Voice Overs
+    - Foley
+---
+### Sound's role in games
+- Creative choices
+    - How sound and music relate to other design choices
+- Technical implementation
+    - Asset Sheets
+    - Unity Integration
+    - Middleware
+    - FMOD
+    - Wwise
+---
+## Course Expecatations
+TODO: get actual percentages
+### Participation
+- Attendance and participation is major part of grade
+
+### Exericises
+- Intended to guide your learning, counted toward participation
+
+### Projects
+- Other major part of grade
+---
+## Course Materials and Resources
+---
+## Online Materials
+### Class Site
+TODO: deploy site
+
+[nigelharsch.com/Game-231](https://nigelharsch.com/Game-231)
+
+- Syllabus
+- Assignemnts
+- Slides and Lecture Notes
+- Helpful guides
+- Links to external resources
+---
+## Online Materials
+### "Sound" by Bartosz Ciechanowski
+[ciechanow.ski/sound/](https://ciechanow.ski/sound/)
+- Free website with a deep introduction to sound
+---
+### Book
+TODO: book image and URL
+---
+### Headphones
+- Over Ear, Closed Back
+    - to block out sound
+- Wired
+    - to use with lab machines
+- Flat Frequency Response, 20hz - 22khz
+TODO: image and link
+---
+### Other Resources
+- Slack Channel
+    - TODO: add channel link
+    - I'm _usually_ available after 4pm PST
+- Equipment Rental
+    - TODO: add contact info
+---
+## Questions before we begin?
+---
+# Week 1:
+# What is Sound?
+Inspired by https://ciechanow.ski/sound/
+---
+## Sound is...
+air pressure waves that are detectable by the ear
+<!-- .element: class="fragment" -->
+
+that's it
+<!-- .element: class="fragment" -->
+</textarea>
+</section>
+<section>
+    <h2>...air pressure</h2>
+    <p> At microscopic level air consists of individual, tiny particles. </p>
+</section>
+<section>
+    <p>Each particle of air travels through space with some velocity in a more or less random direction.</p>
+    <div class="drawer_container ratio_100" id="particles1"></div>
+    <div class="slider_light_gray" id="particles1_sl0"></div>
+    <p style="font-size: 15px; margin: 0">--> Increase the flow of particles</p>
+</section>
+<section>
+    <p>As these particles travel, they collide with eacth other...</p>
+    <div class="drawer_container ratio_100" id="particles2"></div>
+    <div class="slider_light_gray" id="particles2_sl0"></div>
+</section>
+<section>
+    <p>they also colide with objects in space, like walls...</p>
+    <div class="drawer_container ratio_100" id="particles3"></div>
+    <div class="slider_light_gray" id="particles3_sl0"></div>
+</section>
+<section>
+    <p><strong>Air pressure</strong> is the number of collisions between air molecules at any given time.</p>
+    <p>You can think of this as the "thinkness" of the air.</p>
+</section>
+<section>
+    <h2>...air pressure <em>waves</em></h2>
+    <div class="drawer_container ratio_70" id="airspring1"></div>
+    <div id="airspring1_sl0"></div>
+</section>
+<section>
+    <div class="drawer_container ratio_100" id="hero"></div>
+    <div class="keyboard_container" id="hero_keyboard"></div>
+</section>
+        <!-- slides -->
       </div>
+      <!-- reveal -->
     </div>
+    <script src="js/base.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js" integrity="sha512-uQGK5PLqAxTaCXSpiQXLYo93HzIRCBUek4jab5gDky9RN621pYpOh1oSxfmG301wW6OU4s8Bk0JDfi77JMZRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js" integrity="sha512-ik0i3CQNgrNfRPUyZGlVqKGpxWR//UV0Y+4y6FHeHvaX/T/TM2nLyjCDQr6Nl/VZrNF8zjkiQ/YL0bsT9GsbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-     Reveal.initialize(
-         {plugins: [ RevealMarkdown ]}
-     );
+    <script src="js/sound.js"></script>
+    <script> Reveal.initialize({
+         // center: false,
+         plugins: [ RevealMarkdown ],
+         margin: 0.01
+     });
     </script>
+    <script> Reveal.on( 'slidechanged', event => {
+         window.loadSoundContent();
+     } ); </script>
+    <script> Reveal.slide( 24 ); </script>
   </body>
 </html>

@@ -3155,7 +3155,7 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
                 ctx.fillStyle = "#7BAEC6";
                 ctx.globalAlpha = 1;
                 ctx.font = font_size * 2.5 + "px IBM Plex Sans";
-
+                // keyboard frequency
                 ctx.fillText(freq + " Hz", 0, font_size * 0.5);
 
                 ctx.restore();
@@ -6080,9 +6080,25 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
     }
 
-    document.addEventListener("DOMContentLoaded", function(event) {
+    function loadSoundContent(event) {
 
         var language = window.navigator.userLanguage || window.navigator.language;
+
+        // reset all drawers and containers
+        all_drawers = [];
+        all_containers = [];
+        let canvas_containers = document.getElementsByClassName('canvas_container');
+        for (var i=canvas_containers.length; i--;){
+            canvas_containers[i].remove();
+        }
+        // let keyboard_containers = document.getElementsByClassName('keyboard_container');
+        // for (var i=keyboard_containers.length; i--;){
+        //     keyboard_containers[i].remove();
+        // }
+        let slider_containers = document.getElementsByClassName('slider_container');
+        for (var i=slider_containers.length; i--;){
+            slider_containers[i].remove();
+        }
 
         if (language == "en_US" || language == "en-US") {
             metric = false;
@@ -6093,6 +6109,13 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
             let ret = [];
 
             let drawer_container = document.getElementById(name);
+            if (!drawer_container) {
+                // console.log(`cannot make_drawer for ${name}`);
+                return;
+            } else {
+                // console.log(`make_drawer for ${name}`);
+            }
+
             let drawer = new Drawer(drawer_container, name);
             ret.push(drawer);
 
@@ -6122,7 +6145,9 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
             if (has_keyboard) {
                 let container = document.getElementById(name + "_keyboard")
-                new KeyBoard(container, drawer_container, drawer);
+                if (container) {
+                    new KeyBoard(container, drawer_container, drawer);
+                }
             }
 
             if (has_string) {
@@ -6164,9 +6189,6 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         make_drawer("airspring4", 1);
         make_drawer("airspring5", 1);
 
-
-
-
         make_drawer("waveform1", 0, [], true);
         make_drawer("waveform3", 0, [], true);
         make_drawer("waveform4", 0, [], true);
@@ -6185,28 +6207,35 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         make_drawer("waveform_circle", 3, [0.3, 0.5, 0.7]);
 
         let string1 = make_drawer("string1", 1);
-        string1[0].set_sim_slider(0, string1[1]);
+        if (string1) { string1[0].set_sim_slider(0, string1[1]); }
+
 
         string2 = make_drawer("string2", 2);
-        string2[0].set_sim_slider(0, string2[1]);
-        string2[0].set_sim_slider(1, string2[2]);
-
+        if (string2) {
+            string2[0].set_sim_slider(0, string2[1]);
+            string2[0].set_sim_slider(1, string2[2]);
+        }
         string3 = make_drawer("string3", 2);
 
         let string4 = make_drawer("string4");
-        let string4_seg = new SegmentedControl(document.getElementById("string4_seg0"), function(x) {
-            string4[0].set_arg0(x);
-        }, ["1", "2", "3", "4", "5"]);
-
+        if (string4) {
+            let string4_seg = new SegmentedControl(document.getElementById("string4_seg0"), function(x) {
+                string4[0].set_arg0(x);
+            }, ["1", "2", "3", "4", "5"]);
+        }
 
         string5 = make_drawer("string5");
-        string5_seg = new SegmentedControl(document.getElementById("string5_seg0"), function(x) {
-            string5[0].set_arg0(x);
-        }, ["1", "2", "3", "4", "5", "6", "7"]);
-
+        if (string5) {
+            string5_seg = new SegmentedControl(document.getElementById("string5_seg0"), function(x) {
+                string5[0].set_arg0(x);
+            }, ["1", "2", "3", "4", "5", "6", "7"]);
+        }
 
 
         function make_string_drawer(name) {
+            if (!document.getElementById(name)) {
+                return;
+            }
             let ret = [];
 
             let drawer_container = document.getElementById(name);
@@ -6223,52 +6252,53 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
         let analyser = make_drawer("analyser");
 
         let analyser_button = document.getElementById("analyser_button");
-        analyser_button.onclick = function() {
+        if (analyser_button) {
+            analyser_button.onclick = function() {
 
-            if (microphone_source) {
+                if (microphone_source) {
 
-                microphone_source.stop();
-                microphone_source = undefined;
+                    microphone_source.stop();
+                    microphone_source = undefined;
 
-                analyser[0].request_repaint(false);
-                analyser_button.classList.remove("selected");
-                analyser_button.classList.remove("pressed");
-            } else if (navigator.mediaDevices) {
-                analyser_button.classList.add("pressed");
+                    analyser[0].request_repaint(false);
+                    analyser_button.classList.remove("selected");
+                    analyser_button.classList.remove("pressed");
+                } else if (navigator.mediaDevices) {
+                    analyser_button.classList.add("pressed");
 
-                const handleSuccess = function(stream) {
+                    const handleSuccess = function(stream) {
 
-                    microphone_source = audio.analyze_sound(stream);
+                        microphone_source = audio.analyze_sound(stream);
 
-                    if (microphone_source) {
-                        analyser_button.classList.add("selected");
-                        analyser[0].request_repaint(false);
-                    }
-                };
+                        if (microphone_source) {
+                            analyser_button.classList.add("selected");
+                            analyser[0].request_repaint(false);
+                        }
+                    };
 
-                navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-                    .then(handleSuccess)
-                    .catch(function() {
-                        analyser_button.classList.remove("pressed");
-                    });
+                    navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+                        .then(handleSuccess)
+                        .catch(function() {
+                            analyser_button.classList.remove("pressed");
+                        });
+                }
             }
         }
-
 
         let waveform_addition1 = make_drawer("waveform_addition1", 1, [0]);
         let waveform_addition2 = make_drawer("waveform_addition2", 1, [0]);
         make_drawer("waveform_addition3", 1, [0]);
         waveform_addition4 = make_drawer("waveform_addition4", 1, [0]);
+            if (waveform_addition4) {
 
-        let waveform_addition1_seg = new SegmentedControl(document.getElementById("waveform_addition1_seg0"), function(x) {
-            waveform_addition1[0].set_arg1(x);
-        }, ["A", "B", "c"]);
+            let waveform_addition1_seg = new SegmentedControl(document.getElementById("waveform_addition1_seg0"), function(x) {
+                waveform_addition1[0].set_arg1(x);
+            }, ["A", "B", "c"]);
 
-        let waveform_addition2_seg = new SegmentedControl(document.getElementById("waveform_addition2_seg0"), function(x) {
-            waveform_addition2[0].set_arg1(x);
-        }, ["A", "B", "c"]);
-
-
+            let waveform_addition2_seg = new SegmentedControl(document.getElementById("waveform_addition2_seg0"), function(x) {
+                waveform_addition2[0].set_arg1(x);
+            }, ["A", "B", "c"]);
+        }
         make_drawer("distance", 0, [0], true);
         make_drawer("doppler", 1, [0.5], true);
         doppler2 = make_drawer("doppler2", 2, [0, 0.5]);
@@ -6287,14 +6317,15 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
         let pressure_value_span = document.getElementById("pressure_value");
         let spl_value_span = document.getElementById("spl_value");
-        let pressure_slider = new Slider(document.getElementById("pressure_spl_sl0"), function(x) {
+        if (document.getElementById("pressure_spl_sl0")) {
+            let pressure_slider = new Slider(document.getElementById("pressure_spl_sl0"), function(x) {
 
-            let p = Math.floor(Math.pow(10, x * 8) * 2);
-            let spl = 20 * Math.log10(p / 20);
-            pressure_value_span.textContent = p.toString() + " µPa";
-            spl_value_span.textContent = (spl < 0 ? "−" : "") + abs(spl).toFixed(1);
-        });
-
+                let p = Math.floor(Math.pow(10, x * 8) * 2);
+                let spl = 20 * Math.log10(p / 20);
+                pressure_value_span.textContent = p.toString() + " µPa";
+                spl_value_span.textContent = (spl < 0 ? "−" : "") + abs(spl).toFixed(1);
+            });
+        }
 
         if ("IntersectionObserver" in window) {
             const observer = new IntersectionObserver(entries => {
@@ -6351,7 +6382,9 @@ let firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
             }
         }, false);
 
-    });
+    };
+    document.addEventListener("DOMContentLoaded", loadSoundContent);
+    window.loadSoundContent = loadSoundContent;
 })();
 
 function global_animate(animate) {
