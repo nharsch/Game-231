@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 03|Previous Week]]
-- [[Game 220 Week 06|Next Week]]
+- [[Game 231 Week 03|Previous Week]]
+- [[Game 231 Week 06|Next Week]]
 
-# Week 5 - 2/11/22
+# Week 5 - 2/8/23
 
 ## Lecture Notes
 Sound Design Basics (terminology;)
@@ -20,7 +20,7 @@ Sound Design Basics (terminology;)
 
 ### Cover missed notes from Week 04
 - first: download your UI sounds and import them to an Audition session
-- [[Game 220 Week 03#Advanced Sound Editing Concepts]]
+- [[Game 231 Week 03#Advanced Sound Editing Concepts]]
 
 ### Lab Time
 - using what we've learned, let's see what we can do with the UI sounds

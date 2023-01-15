@@ -13,10 +13,9 @@
 <section>
     <h1 class="r-fit-text">Game 231</h1>
     <h2 class="r-fit-text">Sound Design For Games</h2>
-    <h2 class="r-fit-text">Week 1 - Intro to Sound as material</h2>
 </section>
 <section data-markdown>
-<textarea data-template>
+    <textarea data-template>
 # About the Course
 ---
 ## About Me
@@ -58,23 +57,22 @@
     - FMOD
     - Wwise
 ---
-## Course Expecatations
-TODO: get actual percentages
-### Participation
-- Attendance and participation is major part of grade
-
-### Exericises
-- Intended to guide your learning, counted toward participation
-
-### Projects
-- Other major part of grade
+# Course Expecatations
 ---
-## Course Materials and Resources
+## Participation 40%
+Attendance and participation is major part of grade
+
+**Exericises**: Intended to guide your learning, counted toward participation
+
+## Projects 60%
+3 Major projects
+- 2 guided projects
+- 1 open final project
+---
+# Course Materials and Resources
 ---
 ## Online Materials
 ### Class Site
-TODO: deploy site
-
 [nigelharsch.com/Game-231](https://nigelharsch.com/Game-231)
 
 - Syllabus
@@ -88,28 +86,42 @@ TODO: deploy site
 [ciechanow.ski/sound/](https://ciechanow.ski/sound/)
 - Free website with a deep introduction to sound
 ---
-### Book
-TODO: book image and URL
+## Book
+### The Essential Guide to Game Audio
+![](/assets/book.jpeg)
+
+https://www.amazon.com/Essential-Guide-Game-Audio-Practice/dp/041570670X
+        <!-- .element: style="font-size:28px" -->
+
+Reach out to me if you can't find a copy at a reasonable price.
+        <!-- .element: style="font-size:28px" -->
+
 ---
 ### Headphones
 - Over Ear, Closed Back
+        <!-- .element: style="font-size:28px" -->
     - to block out sound
 - Wired
+        <!-- .element: style="font-size:28px" -->
     - to use with lab machines
 - Flat Frequency Response, 20hz - 22khz
-TODO: image and link
+        <!-- .element: style="font-size:28px" -->
+- [Recommended pair: Audio Technicao ATH-m20x](https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_4?crid=2C2M7AJUMIX7&keywords=audio+technica&qid=1642132525&sprefix=audio+technica%2Caps%2C312&sr=8-4)
+        <!-- .element: style="font-size:28px" -->
+
+![](/assets/ath-m20x.webp)
 ---
 ### Other Resources
 - Slack Channel
-    - TODO: add channel link
+    - [#game-231-21](https://apugames.slack.com/archives/C04H6CEGQ9J)
     - I'm _usually_ available after 4pm PST
 - Equipment Rental
-    - TODO: add contact info
+    - https://www.apu.edu/vpa/cinematicarts/equipmentfacilities/
+   <!-- .element: style="font-size:28px" -->
 ---
-## Questions before we begin?
+# Questions before we begin?
 ---
-# Week 1:
-# What is Sound?
+# Week 1: Sound as Material
 Inspired by https://ciechanow.ski/sound/
 ---
 ## Sound is...
@@ -146,8 +158,219 @@ that's it
 </section>
 <section>
     <h2>...air pressure <em>waves</em></h2>
+    <p>Sound is a <em>longitudinal</em> wave, like a spring</p>
     <div class="drawer_container ratio_70" id="airspring1"></div>
     <div id="airspring1_sl0"></div>
+</section>
+<section>
+    <iframe width="560" height="315"
+            data-src="https://www.youtube.com/embed/hfzCLClVO8g"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+    </iframe>
+</section>
+<section>
+    <p>You may also hear sound waves called "compression waves". Air is compressed and de-compressed.</p>
+    <div class="drawer_container ratio_25" id="airspring2"></div>
+    <div id="airspring2_sl0"></div>
+    <p>These are similar to the initial waves of an earthquake</p>
+</section>
+<section>
+    <h2>...detectable by the ear</h2>
+    <img
+        src="/assets/ear-diagram.png"
+        height="500">
+</section>
+<section data-markdown>
+    <textarea data-template>
+    - 2 ears = stereo
+    - volume differences and slight delays in sounds tell us position
+    - huge dynamic range of hearing
+    - pin drop to jet engine
+    - we don't hear all *frequencies* equally
+        - more sensitive to human voice
+    </textarea>
+</section>
+<section>
+    <h1>What's "frequency"?</h1>
+    <div class="drawer_container ratio_40" id="triangle_shape"></div>
+    <div class="slider_a" style="visibility:hidden" id="triangle_shape_sl1"></div>
+    <div class="slider_f" id="triangle_shape_sl0"></div>
+    <div class="slider_ph" style="visibility:hidden" id="triangle_shape_sl2"></div>
+</section>
+<section data-markdown>
+    <textarea data-template class="r-fit-text">
+## Frequency
+- Is how many peaks and valleys we hear per second.
+<!-- .element: style="font-size:30px" -->
+<!-- .element: class="fragment" -->
+- This is measured in "Herz"
+<!-- .element: style="font-size:30px" -->
+<!-- .element: class="fragment" -->
+  - One Hertz (1Hz) is 1 cycle (peak + valley) per second
+- Frequency = Pitch in music
+<!-- .element: class="fragment" -->
+<!-- .element: style="font-size:30px" -->
+- High sounds: babies, bacon frying, sirens, violin
+<!-- .element: style="font-size:30px" -->
+<!-- .element: class="fragment" -->
+- Low sounds: truck engines, thunder, bass
+<!-- .element: style="font-size:30px" -->
+<!-- .element: class="fragment" -->
+- Humans hear sound from ~20Hz - ~22,000Hz (22kHz)
+<!-- .element: style="font-size:30px" -->
+<!-- .element: class="fragment" -->
+  - Below 20hz, we will hear discreet "clicks" instead of a tone
+  - Lower frequencies also hard to detect at low *amplitude*
+    </textarea>
+</section>
+<section>
+    <div class="drawer_container ratio_70" id="waveform_sound1"></div>
+    <div class="slider_f" id="waveform_sound1_sl0"></div>
+    <div class="slider_a" id="waveform_sound1_sl1"></div>
+</section>
+<section>
+    <h1>What's "amplitude"?</h1>
+    <div class="drawer_container ratio_30" id="waveform_circle"></div>
+    <div class="slider_a" id="waveform_circle_sl1"></div>
+    <div class="slider_f" id="waveform_circle_sl0"></div>
+    <div class="slider_ph" style="visibility:hidden" id="waveform_circle_sl2"></div>
+</section>
+<section data-markdown>
+    <textarea data-template>
+## Amplitude
+- Amplitude is the height of the wave
+- Corresponds to Volume
+- Measured in Decibels (db)
+  - Decibel is a _relative_ unit of measurement
+  - 10db is perceived as "twice as loud"
+    </textarea>
+</section>
+<section data-markdown>
+    <textarea data-template>
+## What about _real_ sounds
+- The examples so far show simple waves
+  - one frequency, one amplitude
+- real sounds are made up of several frequencies
+- yet, we only hear one wave (per ear)
+    </textarea>
+</section>
+<section>
+    <h3>Complex waves</h3>
+    <div class="drawer_container ratio_40" id="waveform10"></div>
+    <div class="keyboard_container" id="waveform10_keyboard"></div>
+</section>
+<section>
+    <p>Simple waves are added together to create more complex waves</p>
+    <div class="drawer_container ratio_50" id="waveform_addition2"></div>
+    <div id="waveform_addition2_seg0"></div>
+    <div class="long_slider" id="waveform_addition2_sl0"></div>
+</section>
+<section>
+    <p>Here's a simple sine wave playing an "middle A" note vs an actual piano</p>
+    <img src="/assets/sine-wave.png"/>
+    <img src="/assets/piano-wave.png" />
+</section>
+<section>
+    <h3 style="margin:auto,padding:auto">Waveforms</h3>
+    <p style="font-size: 24px">Audio clips are often visualized with "waveforms". When zoomed in on a waveform, you will see the individual cycles. When zoomed out, you can see the overall "story" of the sound.</p>
+    <table>
+        <tr>
+            <th>
+                <span style="font-size: 20px;margin:auto">A piano note</span>
+            </th>
+            <th>
+                <img style="height: 80px" src="/assets/piano-attack-decay.png"/>
+            </th>
+        </tr>
+        <tr>
+            <th><span style="font-size: 20px;margin:auto">A car passing by</span></th>
+            <th> <img style="height: 80px" src="/assets/car-passes.png" /> </th>
+        </tr>
+        <tr>
+            <th><span style="font-size: 20px;margin:auto">A drum loop</span></th>
+            <th><img style="height: 80px" src="/assets/drum-loop-1.png" /></th>
+        </tr>
+        <tr>
+            <th><span style="font-size: 20px;margin:auto">A conversation</span></th>
+            <th><img style="height: 80px" src="/assets/convo.png" /></th>
+        </tr>
+    </table>
+</section>
+<section>
+    <h1>Digital Sound</h1>
+    <p>If acousting (real) sound is pressure waves in the air, what's in the computer?</p>
+    <p class="fragment">zeroes and ones</p>
+    <p class="fragment">that's it</p>
+</section>
+<section>
+    <h3>Ok, but actually...</h3>
+    <img style="height:400px" src="/assets/microphone-diagram.png"/>
+    <p>Sound pressure waves are converted to electric signals via a microphone</p>
+</section>
+<section>
+    <p style="font-size: 30px;">That electrical signal is "sampled" (measured) several thousand times a second</p>
+    <img style="height:300px" src="/assets/sampling-audio.png"/>
+    <p style="font-size: 30px;">And those measurements are saved to a file, as bytes in a "bytestream"</p>
+    <img style="height:100px" src="/assets/pcm-file.jpeg"/>
+</section>
+<section>
+    <p>Those audio files are used for playback or editing</p>
+    <p>We use DAWs (Digital Audio Workstations) to edit sound</p>
+    <img style="height:400px" src="/assets/pro-tools-editing.jpeg"/>
+</section>
+<section data-markdown>
+<textarea data-template>
+# Describing Sound
+In subjective terms
+---
+Common subjective words:
+- quiet
+- loud
+- muddy
+- boomy
+- honky
+- bright
+- warm
+- tinny
+- dry
+- wet
+- lo-fi
+---
+While these subjective terms are fine, they aren't _precise_.
+- Muddy
+<!-- .element: class="fragment" -->
+    - lacks definition or articulation
+    - could be a lack of high frequency content
+- boomy, boxy
+<!-- .element: class="fragment" -->
+    - often has to do with something resonating
+        - often small rooms
+- bright, tinny
+<!-- .element: class="fragment" -->
+    - too much high end
+
+Througout the course, we'll learn how to describe sounds with more precise, technical language.
+<!-- .element: class="fragment" -->
+---
+# Next Week
+Next week, we'll learn about the tools used to edit and manipulate sounds.
+</textarea>
+</section>
+<section data-markdown style="text-align: left">
+<textarea data-template>
+## Week 1 Assignments
+- [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
+- https://ciechanow.ski/sound/
+    - just skim through to get a working knowledge of _what sound is_
+ - book
+    - Intro
+    - Level 1 - Animation Art Audio
+    - Level 2 - Brief History of Games
+    - Level 3 - Audio for Interactive Evironments
+</textarea>
 </section>
 <section>
     <div class="drawer_container ratio_100" id="hero"></div>
@@ -170,6 +393,6 @@ that's it
     <script> Reveal.on( 'slidechanged', event => {
          window.loadSoundContent();
      } ); </script>
-    <!-- <script> Reveal.slide( 24 ); </script> -->
+    <script> Reveal.slide( 47 ); </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-- Lecture notes: [[Game 220 Week 07#Pro Tools]]
+- Lecture notes: [[Game 231 Week 07#Pro Tools]]
 
 ## Sound Not Playing?
 - Setup --> Playback Engine --> Select ASIO4ALL

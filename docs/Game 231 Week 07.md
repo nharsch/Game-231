@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 06|Previous Week]]
-- [[Game 220 Week 08|Next Week]]
+- [[Game 231 Week 06|Previous Week]]
+- [[Game 231 Week 08|Next Week]]
 
-# Week 7 - 2/25/22
+# Week 7 - 2/22/23
 Voice Over Project Due
 
 ## Catch up

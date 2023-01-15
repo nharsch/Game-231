@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 07|Previous Week]]
-- [[Game 220 Week 10|Next Week]]
+- [[Game 231 Week 07|Previous Week]]
+- [[Game 231 Week 10|Next Week]]
 
-# Week 8 - 3/4/22 
+# Week 8 - 3/2/23 
 - Last week before spring break
 
 ## Lecture Notes

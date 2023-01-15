@@ -4,57 +4,49 @@ aliases: Game 220 Class Notes
 [Source](https://github.com/nharsch/Game-220)
 
 # Game 231 Class Notes
-Every Friday, 7:10pm - 9:10pm
+Every Wednesday, 6:00pm
 
 ## Resources
 - Book - The Essential Guide to Game Audio
 	- [Order Book on Amazon](https://www.amazon.com/Essential-Guide-Game-Audio-Practice/dp/041570670X/ref=sr_1_1?crid=3IGE5UH8X6O3G&keywords=the+essential+guide+to+game+audio&qid=1642484714&sprefix=the+essential+guide+to+game+aud%2Caps%2C199&sr=8-1)
 	- [[The Essential Guide to Game Audio Book Notes|Instructor Book Notes]]
 - [[#Assignments|Assignments]]
-- [[Git Resources]]
-- [Lecture Zoom Line](https://zoom.us/j/97631235561?pwd=YlBxaWdVNEN3Z25Mek8wZ3FUY2N3QT09)
-	- pass: game220
-	- **Only for sick / quarantined students**
-- [headphone recommendation](https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_4?crid=2C2M7AJUMIX7&keywords=audio+technica&qid=1642132525&sprefix=audio+technica%2Caps%2C312&sr=8-4)
+- [Headphone Recommendation](https://www.amazon.com/Audio-Technica-ATH-M20x-Professional-Monitor-Headphones/dp/B00HVLUR18/ref=sr_1_4?crid=2C2M7AJUMIX7&keywords=audio+technica&qid=1642132525&sprefix=audio+technica%2Caps%2C312&sr=8-4)
 - [[Adobe Audition Resources]]
-- [[Audio Effects Guide]]
 - [[Pro Tools Resources]]
+- [[Audio Effects Guide]]
 - [APU Equipment Rental Site](https://www.apu.edu/vpa/cinematicarts/equipmentfacilities)
-- [Class Notes Source Repo](https://github.com/nharsch/Game-220)
 - [Demo Unity Audio Project Repo](https://github.com/APUGames/game-220-unity-audio-intro)
-- [syllabus pdf](https://drive.google.com/file/d/186sxK5CyzCnww-TBSRLQmuPVBCH8z6cg/view?usp=sharing)
-	- now out of date
-- ~~[Trello Board](https://trello.com/b/bg0gDxFM/game-220-20)~~
-	- deprecated
+- [Class Notes Source Code Repo](https://github.com/nharsch/Game-231)
 
 ## Weeks
-- 1/11 [[Game 231 Week 01]] - Sound Basics
-- 1/18 [[Game 231 Week 02]] - Audio Editing
-- 1/25 Week 3  [[Game 220 Week 03]] - Advanced Audio Editing
-- 2/1 [[Game 231/docs/Game 220 Week 04]] - Catch Up
-- 2/8 
-- 2/15 [[Game 220 Week 06]] - Recording Audio, Signal Flow
+- 1/11  - Instructor sick day
+- 1/18 [[Game 231 Week 01]] - Sound Basics
+- 1/25 [[Game 231 Week 02]] - Sound Tools: Introduction to Editing
+- 2/1 [[Game 231 Week 03]] - Advanced Audio Editing
+- 2/8 [[Game 231 Week 04]] - Catch Up
+- 2/15 [[Game 231 Week 06]] - Recording Audio, Signal Flow
 	- VOICE OVER exercise assigned
-- 2/22 [[Game 220 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
+- 2/22 [[Game 231 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
 	- VOICE OVER exercise due. 
 	- GAME SCENE project assigned
-- 3/1 [[Game 220 Week 08]] - Composing, Game Music, Pro Tools Work
+- 3/1 [[Game 231 Week 08]] - Composing, Game Music, Pro Tools Work
 - 3/11 Week 9 - Spring Break, no class
-- 3/15 [[Game 220 Week 10]] - Intro to Game Engines
+- 3/15 [[Game 231 Week 10]] - Intro to Game Engines
 	- GAME SCENE project due
 	- FOOTSTEPS assigned
-- 3/22 [[Game 220 Week 11]] - Unity, Basic Audio in Unity
-- 3/29 [[Game 220 Week 12]] - Middleware and FMOD
+- 3/22 [[Game 231 Week 11]] - Unity, Basic Audio in Unity
+- 3/29 [[Game 231 Week 12]] - Middleware and FMOD
 	- FOOSTEPTS DUE
 	- FINAL PROJECT assigned
-- 4/5 [[Game 220 Week 13]] - Lab time with Unity and FMOD 
-- 4/12 [[Game 220 Week 15]]
-- 4/19  [[Game 220 Week 16]] - Jobs in Game Audio
-- 4/26 [[Game 231/docs/Game 220 Week 17 - Finals]] - Project Time
+- 4/5 [[Game 231 Week 13]] - Lab time with Unity and FMOD 
+- 4/12 [[Game 231 Week 15]]
+- 4/19  [[Game 231 Week 16]] - Jobs in Game Audio
+- 4/26 [[Game 231 Week 17 - Finals]] - Project Time
 
 ## Assignments
 ### Exercise 1: Game Clip Audio Assesment - Due week 2 
-[Exercise 1 Repo](https://github.com/APUGames/Game-220-Exercise-1)
+[Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
 
 ### Exercise 2: Sourcing Clips for an Asset Sheet - Due week 4
 [Exercise 2 Repo](https://github.com/APUGames/Game-220-Exercise-2/tree/main)
@@ -79,7 +71,7 @@ Every Friday, 7:10pm - 9:10pm
 - or add dynamic score to footsteps project
 
 ## Grading Rubric
-- Participation 20%
+- Participation 40%
 - FMOD Footstep Project 20%
 - Game Scene Project 20%
-- Final Project 40%
+- Final Project 20%

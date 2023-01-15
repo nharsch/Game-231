@@ -1,16 +1,15 @@
-- [[GAME 220 Syllabus|Home]]
+- [[index|Home]]
 - [[Game 231 Week 02|Next Week]]
 
-# Week 1 - 1/14/22
+# Week 1 - 1/18/23
+## [slides](slides/week1.html)
 
 ## Lecture Notes
 ### Intro
 - Resources
-	- Canvas being set up
-		- Using this class notes repo instead
+	- Assignments being added to Canvas
 	- Book
 	- Slack
-	- Trello
 - How class will work
 	- lecture heavy at first
 	- more of a workshop toward the end
@@ -50,13 +49,9 @@
 		- Asset Sheets
 		- Unity Integration
 		- Middleware
-	- Git sidequest
-		- GIt/github are industry tools
-		- nothing too fancy here, just practice using it
-		- unfortunately, not great with audio assets
-		- but your changes are tracked and documented
-
+  
 ### What is sound
+- Examples from https://ciechanow.ski/sound/
 - [quick sound intro video](https://www.youtube.com/watch?v=hfzCLClVO8g)
 - changes in sound pressure level, detected by the ear
 	- varies in different animals
@@ -128,7 +123,7 @@
 - digital audio is a stream of numbers representing voltage measured n times a second
 - acoustic and analog are continuous, digital is discrete (pixelated)
 - ![[microphone-diagram.png]]
-- ![[sampling-audio.png]]
+- ![[sampling-audio.png]]![[pcm file.jpeg]]
 - ![[analog-to-digital-conversion.png]]
 - what digital sound gets us
 	- consistent playblack
@@ -197,50 +192,16 @@
 		- vinyl surface noise
 		- Genres of music
 			- "Lofi beats to study to"
-	- Harsh
-		- ???
-- When being creative, vague is good
-	- Shiny wood
-	- Dull metal
-	- It should sound like dawn
-	- Use carefully
-	
-#### Objective Analysis
-- When things sound bad, look for these
-- Volume
-	- is it too loud or too quiet
-	- should the sound fade in or out
-	- Are some parts way too loud and some way too quiet
-- Frequency
-	- Are you hearing too much of one frequency range
-		- high
-		- mid
-		- low
-- Reflections, Space
-	- Can I hear the room / space where this was recorded
-	- Does the content sound too dry as to sound artificial
-	- distance from source
-		- sounds too far away
-- Concept: Signal vs Noise
-	- How loud is the content is heard vs non content
-	- Recording artifacts
-	- Environmental Sounds
-	- mouth clicks, clothing ruffling, sniffles
-
-### Additional Resources
-- [Video on Describing Audio Objectively](https://www.youtube.com/watch?v=wdkrqiqz5ek)
-- Science Experiment on analog vs digital
-	- [Mics, Speakers, Electric Audio](https://youtu.be/_xHw-RRc-_U)
-- Git resources
-	- [Git Branching Video](https://www.youtube.com/watch?v=Ir1KfssniRI)
-	- [Git Kraken Video](https://www.youtube.com/watch?v=ub9GfRziCtU&feature=emb_logo)
 	
 ## Assigments
 ### Exercise 1: 
-- [Exercise 1 Repo](https://github.com/APUGames/Game-220-Exercise-1)
+- [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
 
 ### Assigned Reading: 
-- [[The Essential Guide to Game Audio Book Notes#Intro|Intro]]
-- [[The Essential Guide to Game Audio Book Notes#Level 1 - Animation Art Audio|Level 1]]
-- [[The Essential Guide to Game Audio Book Notes#Level 2 - Brief History of Games|Level 2]]
-- [[The Essential Guide to Game Audio Book Notes#Level 3 - Audio for Interactive Evironments|Level 3]]
+- https://ciechanow.ski/sound/
+	- just skim through to get a working knowledge of _what sound is_
+ - book
+	- [[The Essential Guide to Game Audio Book Notes#Intro|Intro]]
+	- [[The Essential Guide to Game Audio Book Notes#Level 1 - Animation Art Audio|Level 1]]
+	- [[The Essential Guide to Game Audio Book Notes#Level 2 - Brief History of Games|Level 2]]
+	- [[The Essential Guide to Game Audio Book Notes#Level 3 - Audio for Interactive Evironments|Level 3]]

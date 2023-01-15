@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 08|Previous Week]]
-- [[Game 220 Week 11|Next Week]]
+- [[Game 231 Week 08|Previous Week]]
+- [[Game 231 Week 11|Next Week]]
 
-# Week 10 - 3/18/22
+# Week 10 - 3/15/23
 GAME SCENE project due
 
 ## Lecture Notes

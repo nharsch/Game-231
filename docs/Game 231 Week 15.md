@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 13|Previous Week]]
-- [[Game 220 Week 16|Next Week]]
+- [[Game 231 Week 13|Previous Week]]
+- [[Game 231 Week 16|Next Week]]
 
-# Week 15 - 4/22/22
+# Week 15 - 4/12/23
 
 ## Lecture Notes
 

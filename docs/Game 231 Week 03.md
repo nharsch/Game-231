@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
 - [[Game 231 Week 02|Previous Week]]
-- [[Game 231/docs/Game 220 Week 04|Next Week]]
+- [[Game 231 Week 04|Next Week]]
 
-# Week 4 - 2/4/22
+# Week 4 - 2/1/23
 - After week break for Game Jam
 - [Exercise 2](https://github.com/APUGames/Game-220-Exercise-2/tree/main) due
 

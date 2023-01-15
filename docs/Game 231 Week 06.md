@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 231/docs/Game 220 Week 04|Previous Week]]
-- [[Game 220 Week 07|Next Week]]
+- [[Game 231 Week 04|Previous Week]]
+- [[Game 231 Week 07|Next Week]]
 
-# Week 6 - 2/18/22
+# Week 6 - 2/15/23
 - Exercise 3 Due
 
 ## Lecture Notes

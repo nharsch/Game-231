@@ -1,8 +1,8 @@
 - [[GAME 220 Syllabus|Home]]
 - [[Game 231 Week 01|Previous Week]]
-- [[Game 220 Week 03|Next Week]]
+- [[Game 231 Week 03|Next Week]]
 
-# Week 2 - 1/21/22
+# Week 2 - 1/25/23
 - Exercise 1 Due
 
 ## Lecture Notes
@@ -17,8 +17,6 @@ _5 minutes_
 	- what is frequency?
 	
 ### Exercise 1 Review
-_10 minutes_
-
 - how to describe first 3 sounds
 - what's the difference between the 2 EQ'd sounds
 - answers for last section
@@ -34,11 +32,6 @@ _10 minutes_
 	- [VSCode](https://code.visualstudio.com/)
 	- [Atom](https://atom.io/)
 
-#### Git refresher
-- What git is
-- How branching works
-- git clients
-
 ### Reading Review
 _15 minutes_
 
@@ -48,8 +41,6 @@ _15 minutes_
 - [[The Essential Guide to Game Audio Book Notes#Level 3 - Audio for Interactive Evironments]]
 
 ### Introduction to DAWs
-_7:40_
-
 - Digital Audio Workstation
 - Destructive editing vs non destructive
 	- Audition waveform view vs multitrack

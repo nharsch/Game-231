@@ -1,14 +1,14 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 220 Week 12|Previous Week]]
-- [[Game 220 Week 15|Next Week]]
+- [[Game 231 Week 12|Previous Week]]
+- [[Game 231 Week 15|Next Week]]
 
-# Week 13 - 4/8/22
+# Week 13 - 4/5/23
 - Easter Break Next Week
 
 ## Lecture Notes
 - Did anyone get FMOD/Unity set up for working
 
-- Briefly cover [[Game 220 Week 12]] lecture notes
+- Briefly cover [[Game 231 Week 12]] lecture notes
 	- What the assignment is
 	- What FMOD is
 	- FMOD Parameters and Unity
