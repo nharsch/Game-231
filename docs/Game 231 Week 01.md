@@ -205,3 +205,5 @@
 	- [[The Essential Guide to Game Audio Book Notes#Level 1 - Animation Art Audio|Level 1]]
 	- [[The Essential Guide to Game Audio Book Notes#Level 2 - Brief History of Games|Level 2]]
 	- [[The Essential Guide to Game Audio Book Notes#Level 3 - Audio for Interactive Evironments|Level 3]]
+
+## In Class Notes
