@@ -1,10 +1,13 @@
-- [[GAME 220 Syllabus|Home]]
+- [[index|home]]
 - [[Game 231 Week 01|Previous Week]]
 - [[Game 231 Week 03|Next Week]]
 
-# Week 2 - 1/25/23
+# Week 2 - Sound Tools: Introduction to Editing
+1/25/23
+- [slides](slides/week2.html)
 - Exercise 1 Due
-
+	- [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
+ 
 ## Lecture Notes
 Game Audio Technology (sampling; MIDI; audio compression, middleware)
 
@@ -20,17 +23,6 @@ _5 minutes_
 - how to describe first 3 sounds
 - what's the difference between the 2 EQ'd sounds
 - answers for last section
-- github issues?
-- everyone have a decent text editor?
-	- Quick note on what [Markdown](https://www.markdownguide.org/) is
-		- human readable markup language
-		- Are simple text files
-		- Can be rendered in different ways
-		- Becoming industry standard
-				- Build into github and slack, as well as other tools
-	- markdown preview is nice
-	- [VSCode](https://code.visualstudio.com/)
-	- [Atom](https://atom.io/)
 
 ### Reading Review
 _15 minutes_
