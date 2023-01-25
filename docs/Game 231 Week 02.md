@@ -4,6 +4,7 @@
 
 # Week 2 - Sound Tools: Introduction to Editing
 1/25/23
+
 - [slides](slides/week2.html)
 - Exercise 1 Due
 	- [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
