@@ -52,7 +52,7 @@ Every Wednesday, 6:00pm
 [Exercise 2](https://canvas.apu.edu/courses/45722/assignments/798500)
 
 ### Exercise 3: UI Sound Library  - Due week 5
-[Exercise 3 Repo](https://github.com/APUGames/Game-220-Exercise-3)
+[Exercise 3](https://canvas.apu.edu/courses/45722/assignments/798501)
  
 ### Exercise 4: Game Intro Voice Over - ~Due week 7~ Due week 10
 [Exercise 4 Repo](https://github.com/APUGames/Game-220-Exercise-4)

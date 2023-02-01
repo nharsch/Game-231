@@ -97,7 +97,7 @@ EQ -- EQ'd signal --> Output(Output);
 
 ## Assignments
 ### Exercise 3: UI Sound Library  - due week 5
-[Exercise 3 Repo](https://github.com/APUGames/Game-220-Exercise-3)
+[Exercise 3](https://canvas.apu.edu/courses/45722/assignments/798501)
 > You are tasked with creating User Interface sounds for the menu page and inventory screen of an adventure/survival game. These sounds are _non diagetic_, but they should fit the overall theme of the game, which is "outdoor survival". The client requested that the sounds "sound organic" and "not electronic".
 
 ### Reading
