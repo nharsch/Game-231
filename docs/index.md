@@ -48,8 +48,8 @@ Every Wednesday, 6:00pm
 ### Exercise 1: Game Clip Audio Assesment - Due week 2 
 [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
 
-### Exercise 2: Sourcing Clips for an Asset Sheet - Due week 4
-[Exercise 2 Repo](https://github.com/APUGames/Game-220-Exercise-2/tree/main)
+### Exercise 2: Sourcing Clips for an Asset Sheet - Due week 3
+[Exercise 2](https://canvas.apu.edu/courses/45722/assignments/798500)
 
 ### Exercise 3: UI Sound Library  - Due week 5
 [Exercise 3 Repo](https://github.com/APUGames/Game-220-Exercise-3)

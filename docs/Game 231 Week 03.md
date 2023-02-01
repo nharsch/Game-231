@@ -1,19 +1,12 @@
-- [[GAME 220 Syllabus|Home]]
+- [[index|Home]]
 - [[Game 231 Week 02|Previous Week]]
 - [[Game 231 Week 04|Next Week]]
 
-# Week 4 - 2/1/23
-- After week break for Game Jam
+# Week 3 - 2/1/23
 - [Exercise 2](https://github.com/APUGames/Game-220-Exercise-2/tree/main) due
 
 ## Catch up
-- Canvas: set up, nothing new on it, don't use it, use these
-	- check slack
-	- check online course notes
-	- check email
-	- check trello
-		- is this helpful?
-- Books?
+- Everyone have Books?
 - Reading?
 - Headphones?
 - Assignment 2?

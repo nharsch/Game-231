@@ -207,7 +207,7 @@ _8:40_
 - [Where to Source Sounds](https://www.youtube.com/watch?v=PTTc-c9SmiA)
 
 ### Exercise 2: Stand Alone Game SFX
-- [Exercise 2 Repo](https://github.com/APUGames/Game-220-Exercise-2/tree/main)
+- [Exercise 2](https://canvas.apu.edu/courses/45722/assignments/798500)
 
 ### Reading
 - Reassigned from last week:
