@@ -3,6 +3,7 @@
 - [[Game 231 Week 04|Next Week]]
 
 # Week 3 - 2/1/23
+- [slides](slides/week3.html)
 - [Exercise 2](https://github.com/APUGames/Game-220-Exercise-2/tree/main) due
 
 ## Catch up
