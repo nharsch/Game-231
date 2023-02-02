@@ -815,3 +815,7 @@ span.equation_div_symbol {
         max-width: 260px;
     }
 }
+
+:root {
+    --r-main-font-size: 30px;
+}
