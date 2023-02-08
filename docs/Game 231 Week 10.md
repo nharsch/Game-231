@@ -1,23 +1,24 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 231 Week 08|Previous Week]]
-- [[Game 231 Week 11|Next Week]]
+- [[Game 231 Week 09|Previous Week]]
+- [[Game 231 Week 12|Next Week]]
 
-# Week 10 - 3/15/23
-GAME SCENE project due
+# Week 10 - 3/22/23
 
 ## Lecture Notes
-Game Engines
+Introduction to Unity and Audio for Unity
 
 ### Housekeeping
-- [ ] complete your assigments
-- [ ] [GAME SCENE](https://learn.unity.com/tutorial/audio-setup) project due
+- complete your assigments
+- [GAME SCENE](https://learn.unity.com/tutorial/audio-setup) project due
+	- how is this going?
 
 ### Reading
-- [[The Essential Guide to Game Audio Book Notes#Level 10 - Game Engines]]
 - [[The Essential Guide to Game Audio Book Notes#Level 11 - Intro to Unity]]
+- [[The Essential Guide to Game Audio Book Notes#Level 12 - Basic Audio in Unity 3D]]
 
-## Unity Audio
+### Week 10 Review Basic Audio in Unity
 [Demo Project Repo](https://github.com/APUGames/game-220-unity-audio-intro)
+
 - Audio Sources
 - Audio Listeners
 - Adding Effects to Sources
@@ -25,9 +26,12 @@ Game Engines
 	- effects
 - Reverb Zones
 
+### Brief Intro to Scripting Sounds
+
 ## Assignments
-#### Unity Beginning Audio in Unity
-- https://learn.unity.com/project/beginning-audio-in-unity
 
 ### Reading
-- [[The Essential Guide to Game Audio Book Notes#Level 12 - Basic Audio in Unity 3D]]
+- [[The Essential Guide to Game Audio Book Notes#Level 8 - Middleware]]
+
+### Preview of FMOD
+- [FMOD Example Project](https://github.com/APUGames/FMODProject)

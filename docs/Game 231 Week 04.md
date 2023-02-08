@@ -1,8 +1,9 @@
 - [[GAME 220 Syllabus|Home]]
 - [[Game 231 Week 03|Previous Week]]
-- [[Game 231 Week 06|Next Week]]
+- [[Game 231 Week 05|Next Week]]
 
-# Week 5 - 2/8/23
+# Week 4 - 2/8/23
+## [slides](slides/week4.html)
 
 ## Lecture Notes
 Sound Design Basics (terminology;)
@@ -26,4 +27,6 @@ Sound Design Basics (terminology;)
 - using what we've learned, let's see what we can do with the UI sounds
 
 ## Assignments
-- none
+- Catch up on all exercises
+- Catch up on reading from last week: [[The Essential Guide to Game Audio Book Notes#Level 5 - Sound Design in Games]]
+- [[The Essential Guide to Game Audio Book Notes#Level 4 - Styles and Genres]]

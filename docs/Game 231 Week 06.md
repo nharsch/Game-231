@@ -1,85 +1,74 @@
 - [[GAME 220 Syllabus|Home]]
-- [[Game 231 Week 04|Previous Week]]
+- [[Game 231 Week 05|Previous Week]]
 - [[Game 231 Week 07|Next Week]]
 
-# Week 6 - 2/15/23
-- Exercise 3 Due
+# Week 7 - 2/22/23
+Voice Over Project Due
+
+## Catch up
+- problems with assignment?
+	- please reach out
 
 ## Lecture Notes
-Foley and recording on location (recording equipment; signal flow; microphone techniques; recording on location)
+Intro to Pro Tools and Non Destructive Editing
 
-### Announcements
-- I retooled the syllabus
-	- cointinuing audio work
-	- will get to Unity integration post spring break
-- Does anyone care about the Trello board?
-	- I might delete it
-- Everyone should get their assignments submitted
-	- I need to start submitting grades
+ ### Reading 
+- [[The Essential Guide to Game Audio Book Notes#Level 7 - Voice Over|Level 7]]
 
-### Some more useful Sound Effects
-- Example audio file: [[noisy_VO.wav]]
+### Prep
+- Can you open Pro Tools on Lab machines?
 
-#### Compression
-- reduces volume over a certain point
+### Intro to Pro Tools and Non Destructive Editing
+- concept of signal flow
+	- ![[Signal Flow.png]]
+- concept of mixing
+	- Streams of audio combined
+		- like what our ear does
 
-##### Threshold
-The db level at which the volume reduction will kick in. 
-
-##### Ratio
-The amount of gain reduction applied to signal over threshold.
-
-For instance, with a 2:1 ratio, the gain is reduced by half. For 2 db over threshold, output gain will be 1, for 10db over, 5db out, etc. For 10:1, gain will be reduced by 90%, for 10db over threshold, 1db will go out.
-
-##### Attack
-Time, usually in milliseconds, that the compression will start one the level has gone over the threshold. This is useful if you want to keep _some_ of the attack of a signal.
-
-##### Release
-Time, usually in milliseconds, that the gain reduction will stop after the signal has dropped below the threshold. If compression sounds "choppy", often slowing the release time will make the effect sound smoother.
-
-#### Noise Gate
-- reduces volume under a certain point
-
-#### Noise Reduction
-- complex algorithm
-- DeNoiser is the most user friendly
-
-#### Distortion
-- complex harmonic interaction
-
-### Recording Audio
-Introduction to Signal Path
-- What a microphone is
-- Signal Flow
-- Mic techniques
-
-- Room problems
-	- https://www.youtube.com/watch?v=JPYt10zrclQ
-
-- Common Voice Over fixes
-	- Sibilance
-		- Pop filter
-		- De-esser
-	- Room resonance
-		- Use EQ notch
-	- Mouth sounds
-		- Give actor some water
-		- use judicious editing
-	- Even volume
-		- use checkerboard edits to increse quiet levels
-			- can result in uneven noise floors
-		- compression and limiting
-
-### Voice Over Assignment
-- follow instructions, update tsv file
-- are you familar with renting equipment?
-  - [Equipment Rental Site](https://www.apu.edu/vpa/cinematicarts/equipmentfacilities/)
-
-
-## Assignment
-### Voice Over
-https://github.com/APUGames/Game-220-Exercise-4
-- Due Week 7
+### Pro Tools
+- Industry Standard DAW
+- Creating a master track
+	- Other DAWs don't require this
+- inserting a track
+	- new track
+	- or drag and drop file
+- concept of "clips"
+	- clip level adjustments with Audio Suite
+	- similar to what we're used to with Audition
+- inserting fades
+- clip levels
+- mixer window
+	- volume (aka fader)
+	- pan
+	- effects inserts
+		- go to effect, come back directly
+	- sends
+		- routes signal somewhere else
+			- like one reverb
+	- inserts vs fades
+		- ![[Insert vs Send.png]]
+		
+### Other major DAWs
+- Reaper 
+	- Cheaper than Pro Tools, easier to use (IMHO)
+- Logic
+	- Apple only
+	- Very similar to Pro Tools, not as deep
+	- Popular with composers
+- Steinberg Cubase
+	- Cutting edge features
+	- As deep as Pro Tools
+- Ableton
+	- Focuses on Music Production
+	- Purpose built for live performance
+	- Simpler than Pro Tools, more consistent design
+	- Not purpose built for Pro Audio
+	
+## Assignments
+### GAME SCENE project assigned (due Week 10)
+- Rescore/remix an existing Game Scene
+- [Assignment Repo](https://github.com/APUGames/Game-220-Project-1)
 
 ### Reading
-- [[The Essential Guide to Game Audio Book Notes#Level 7 - Voice Over|Level 7 - Voice Over]]
+- [[The Essential Guide to Game Audio Book Notes#Level 9 - Preparing Audio|Level 9- Prepping Audio]]
+- [[The Essential Guide to Game Audio Book Notes#Level 6 - Composing| Level 6 - Composing]]

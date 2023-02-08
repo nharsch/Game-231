@@ -101,8 +101,7 @@ EQ -- EQ'd signal --> Output(Output);
 > You are tasked with creating User Interface sounds for the menu page and inventory screen of an adventure/survival game. These sounds are _non diagetic_, but they should fit the overall theme of the game, which is "outdoor survival". The client requested that the sounds "sound organic" and "not electronic".
 
 ### Reading
-- Catch up from last week: [[The Essential Guide to Game Audio Book Notes#Level 5 - Sound Design in Games]]
-- [[The Essential Guide to Game Audio Book Notes#Level 4 - Styles and Genres]]
+- [[The Essential Guide to Game Audio Book Notes#Level 5 - Sound Design in Games]]
 
 ## Optional Additional Reading
 - [Video: Differences between Sample Rates](https://www.youtube.com/watch?v=fZzMXdxbOes)
