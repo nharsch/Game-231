@@ -25,24 +25,24 @@ Every Wednesday, 6:00pm
 - 1/25 [[Game 231 Week 02]] - Sound Tools: Introduction to Editing
 - 2/1 [[Game 231 Week 03]] - Advanced Audio Editing
 - 2/8 [[Game 231 Week 04]] - Catch Up
-- 2/15 [[Game 231 Week 06]] - Recording Audio, Signal Flow
+- 2/15 [[Game 231 Week 05]] - Recording Audio, Signal Flow
 	- VOICE OVER exercise assigned
-- 2/22 [[Game 231 Week 07]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
+- 2/22 [[Game 231 Week 06]] - Pro Tools, Non Destructive Editing. Audio Engineering (prepping audio, mixing, looping)
 	- VOICE OVER exercise due. 
 	- GAME SCENE project assigned
-- 3/1 [[Game 231 Week 08]] - Composing, Game Music, Pro Tools Work
+- 3/1 [[Game 231 Week 07]] - Composing, Game Music, Pro Tools Work
 - 3/11 Week 9 - Spring Break, no class
-- 3/15 [[Game 231 Week 10]] - Intro to Game Engines
+- 3/15 [[Game 231 Week 9]] - Intro to Game Engines
 	- GAME SCENE project due
 	- FOOTSTEPS assigned
-- 3/22 [[Game 231 Week 11]] - Unity, Basic Audio in Unity
-- 3/29 [[Game 231 Week 12]] - Middleware and FMOD
+- 3/22 [[Game 231 Week 10]] - Unity, Basic Audio in Unity
+- 3/29 [[Game 231 Week 11]] - Middleware and FMOD
 	- FOOSTEPTS DUE
 	- FINAL PROJECT assigned
-- 4/5 [[Game 231 Week 13]] - Lab time with Unity and FMOD 
-- 4/12 [[Game 231 Week 15]]
-- 4/19  [[Game 231 Week 16]] - Jobs in Game Audio
-- 4/26 [[Game 231 Week 17 - Finals]] - Project Time
+- 4/5 [[Game 231 Week 12]] - Lab time with Unity and FMOD 
+- 4/12 [[Game 231 Week 13]]
+- 4/19  [[Game 231 Week 14]] - Jobs in Game Audio
+- 4/26 [[Game 231 Week 15 - Finals]] - Project Time
 
 ## Assignments
 ### Exercise 1: Game Clip Audio Assesment - Due week 2 
@@ -54,13 +54,13 @@ Every Wednesday, 6:00pm
 ### Exercise 3: UI Sound Library  - Due week 5
 [Exercise 3](https://canvas.apu.edu/courses/45722/assignments/798501)
  
-### Exercise 4: Game Intro Voice Over - ~Due week 7~ Due week 10
-[Exercise 4 Repo](https://github.com/APUGames/Game-220-Exercise-4)
+### Exercise 4: Game Intro Voice Over - Due week 6
+[Exercise 4](https://canvas.apu.edu/courses/45722/assignments/805177)
 
-### Project 1: Game Animatic/Scene - ~Due week 10~ Due Week 11
+### Project 1: Game Animatic/Scene - Due week 10
 [Project 1 Repo](https://github.com/APUGames/Game-220-Project-1)
 
-### Project 2: Footsteps Project - ~Due week 12~ Due Week 15
+### Project 2: Footsteps Project - Due week 12
 [Project 2 Repo](https://github.com/APUGames/Game-220-Project-2-Footsteps)
   - record footsteps on multiple surfaces
   - looping

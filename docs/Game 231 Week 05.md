@@ -1,9 +1,11 @@
-- [[GAME 220 Syllabus|Home]]
+- [[index|Home]]
 - [[Game 231 Week 04|Previous Week]]
 - [[Game 231 Week 06|Next Week]]
 
 # Week 5 - 2/15/23
 - Exercise 3 Due
+
+## [slides](slides/week5.html)
 
 ## Lecture Notes
 Foley and recording on location (recording equipment; signal flow; microphone techniques; recording on location)
@@ -18,8 +20,8 @@ Foley and recording on location (recording equipment; signal flow; microphone te
 	- I need to start submitting grades
 
 ### Reading Review
-- [[The Essential Guide to Game Audio Book Notes#Level 5 - Sound Design in Games]]
-- [[The Essential Guide to Game Audio Book Notes#Level 4 - Styles and Genres]]
+- [Level 4 - Styles and Genres]
+- [Level 5 - Sound Design in Games]
 
 
 ### Some more useful Sound Effects
