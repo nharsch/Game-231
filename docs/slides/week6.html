@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css" integrity="sha512-A5PKBHoJQHdKjxpwyV+VhMsK7L3MMV1Ch2++rS0bn3xX8+5qJb3WpPvwJH1eqb6iMRtotfiOO7Jhl1qQ02Rwuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/beige.min.css" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/sound.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h1 class="r-fit-text">Game 231</h1>
+            <h2>Week 6</h2>
+            <h2>Intro to Pro Tools and Non Destructive Editing</h2>
+        </section>
+        <section data-markdown>
+            <textarea data-template>
+### Announcements
+- How is Voice Over project going?
+  - I put up the missing asset sheet
+  - Has anyone rented equipment yet?
+---
+### Reading Review
+- [Level 7 - Voice Over](https://nigelharsch.com/Game-231/The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-7-voice-over)
+---
+# Introduction to Non Destructive Editing
+AKA Multitracking
+---
+## A review of Signal Flow Concept
+![](https://nigelharsch.com/Game-231/assets/Signal%20Flow.png)
+<!-- .element: class="r-stretch" -->
+---
+## Mixing
+- *Mixing* allows us to combine multiple audio signals into one.
+- Most DAWs have a mixing section that resembles a hardware mixer
+  - Each vertical column handles adjustments to one signal
+  - Usually includes a *Master* fader for _overall_ adjustments
+![](https://nigelharsch.com/Game-231/assets/mixer-channel-strip.png)
+---
+## Quick intro to Pro Tools
+- Industry standard DAW
+- Maybe the least "beginner friendly"
+- A knowledge of pro tools will translate to most other DAWs
+---
+### Lab: Fire up Pro Tools, test audio
+- Create 4 stereo input tracks
+  - Track -> Create Track
+    - 4, Stereo, Audio Track, Ticks, Audio
+- Create Master Fader
+  - Track -> Create Track
+    - 1, Stereo, Master Fader, Ticks, Master
+- Put 2 audio files into the project
+  - Can drag and drop onto track
+  - Or File -> Import
+    - will create a new track
+- Play sounds
+  - Debug output if none playing
+---
+### Non Destructive Editing Concepts
+- audio "clips"
+  - can be sliced and moved, orignal audio file remains unchanged
+- audio mixing
+  - multiple sounds levels can be adjusted and combined into one audio stream
+- real time effects
+  - effects aren't "printed", but applied on playback
+- Automation
+  - change parameters over time
+    - important for understanding FMOD
+---
+### Lab: Mix sounds
+- Open mixer window,
+  - Is in separate window
+  - Pro tip: Window -> Arrange
+- Adjust volume of channels
+  - Volume is the vertical "slider"
+- Adjust master
+---
+### Adding Effects in Non Destructive DAWs
+- In Audition we "printed" effects onto the clip
+- In Non Destructive editing, we think of audio effects as a transformation
+- Effects can be "chained" into each other
+  - Like guitar effects
+![](https://nigelharsch.com/Game-231/assets/guitar-effects-chain.png)
+---
+### Lab: Add an insert effect
+- On track lane or mixer column, click empty slot under "INSERTS"
+- Select an effect
+- Playback sound
+- enable and disable
+---
+### Inserts vs Sends
+- Inserts apply effect to one input channel "inline"
+- Sends allow us to "route" multiple input channels to another channel
+  - Often used for time based effects like reverb and delay
+  - Sounds more natural, cuts down on resources
+- Sends use an audio "bus" to route sounds to effect
+  - effectively "splits" the audio stream into two, one goes to send, one goes down channel strip as usual
+![](https://nigelharsch.com/Game-231/assets/Insert%20vs%20Send.png)
+---
+### Lab: Create an effects send
+- Create Aux Input Track (to receive sound)
+  - Track -> New
+  - 1, Stereo, Aux Input, Ticks, Effect Send
+- Assign bus input on Effect Send
+  - Under "I/O", select "Bus 1-2"
+- Add bus to sends to input tracks
+  - Under "sends", select "Bus 1-2"
+---
+### Other uses for buses
+- Creating "stems" or "submixes"
+  - Send all the drums to one bus, mix the overall drums as one channel
+- Routing monitor mixes for live performers
+- Routing out to physical hardware and back
+- Mostly, we won't need them for our purposes
+---
+## Automation
+- Adjusts parameters over time
+- Usually using "automation lanes" and "automation curves"
+---
+### Lab: add volume automation to track
+- on track lane, click small triangle in lower left corner
+  - add volume automation curve
+  - add effects send automation curve
+---
+### Lab: Editing clips
+- select a region of the a clip
+- ctrl+e (or right click -> separate)
+- move new clip around
+---
+### Lab: Clip Gain
+---
+### Lab: Looping
+- right click clip -> loop
+---
+## Pro Tools Wrap up
+- We'll use Pro Tools for our next assignment
+- Familiarize youself with it as best you can
+- Many concepts from Pro Tools will be needed to understand FMOD
+---
+## Other (arguably better) DAWs
+...If you end up hating it
+- Cubase
+  - More cutting edge features than Pro Tools
+- REAPER
+  - Free to try, inexpensive to buy
+  - My go to for editing podcasts, voice overs, other non musical projects
+- Logic
+  - Focused on music production
+  - More beginner friendly
+  - Includes library of Software Instruments
+- Ableton
+  - Focused on live performance and music production
+  - Very popular
+  - My go to for music production
+---
+## Next Week
+- Project 1 - Game Scene Remix (due 3/15)
+- Reading
+  - Level 9 - Prepping Audio
+  - Level 6 - Composing
+</textarea>
+</section>
+    <!-- slides -->
+      </div>
+      <!-- reveal -->
+    </div>
+    <script src="js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js" integrity="sha512-uQGK5PLqAxTaCXSpiQXLYo93HzIRCBUek4jab5gDky9RN621pYpOh1oSxfmG301wW6OU4s8Bk0JDfi77JMZRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js" integrity="sha512-ik0i3CQNgrNfRPUyZGlVqKGpxWR//UV0Y+4y6FHeHvaX/T/TM2nLyjCDQr6Nl/VZrNF8zjkiQ/YL0bsT9GsbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sound.js"></script>
+    <script> Reveal.initialize({
+         // center: false,
+         plugins: [ RevealMarkdown ],
+         margin: 0.01
+     });
+    </script>
+    <script> Reveal.on( 'slidechanged', event => {
+         window.loadSoundContent();
+     } ); </script>
+    <!-- <script> Reveal.slide( 100 ); </script> -->
+  </body>
+</html>

@@ -2,17 +2,19 @@
 - [[Game 231 Week 05|Previous Week]]
 - [[Game 231 Week 07|Next Week]]
 
-# Week 7 - 2/22/23
-Voice Over Project Due
+# Week 6 - 2/22/23
+~Voice Over Project Due~
+Voice Over project due next week
+
+## [slides](slides/week6.html)
 
 ## Catch up
-- problems with assignment?
-	- please reach out
+- issues renting equipment?
 
 ## Lecture Notes
 Intro to Pro Tools and Non Destructive Editing
 
- ### Reading 
+### Reading 
 - [[The Essential Guide to Game Audio Book Notes#Level 7 - Voice Over|Level 7]]
 
 ### Prep
