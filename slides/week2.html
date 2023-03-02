@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css" integrity="sha512-A5PKBHoJQHdKjxpwyV+VhMsK7L3MMV1Ch2++rS0bn3xX8+5qJb3WpPvwJH1eqb6iMRtotfiOO7Jhl1qQ02Rwuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/beige.min.css" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/sound.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h1 class="r-fit-text">Game 231</h1>
+            <h2>Week 2</h2>
+            <h2>Sound Tools: Introduction to Editing</h2>
+        </section>
+<section data-markdown>
+    <textarea data-template>
+## Week 1 review
+- what is sound?
+        <!-- .element: class="fragment" -->
+- what is amplitude?
+        <!-- .element: class="fragment" -->
+- what is frequency?
+        <!-- .element: class="fragment" -->
+---
+## A brief interlude on phonograph technology
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wRTgl0qx6wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+---
+## A Brief Science Experiment
+---
+## Exercise 1 Review
+- [Exercise 1](https://canvas.apu.edu/courses/45722/assignments/798498)
+- Describe Frequency or "EQ" differences
+  - did this confuse anyone?
+---
+# Reading Review
+## Level 1 - Animation, Art, Audio
+- What is a platform
+- Story vs Interactivity
+
+## Level 2 - Brief History of Games
+- Video Game History
+	- Primitive synths to PCM
+---
+## Level 3 - Audio for Interactive Evironments <!-- .element: class="r-fit-text" -->
+- Non linearity
+- Digital Sound Basics
+	- Sample Rate
+	- Bit Depth
+- File Compression
+	- not to be confused with "Dynamic Compression", which deals with volume
+- MIDI and Synthesis
+    - [Quick NES Sounds Vid](https://www.youtube.com/watch?v=la3coK5pq5w)
+- Digital Audio
+- Middleware
+---
+## Introduction to DAWs
+- DAW: Digital Audio Workstation
+        <!-- .element: class="fragment" -->
+- 2 Flavors of DAWs: Destructive vs Non Destructive Editing
+        <!-- .element: class="fragment" -->
+---
+## Destructive Editors
+![](/Game-231/assets/audition-editor.jpeg) <!-- .element: height="200px" -->
+- Used for making changes to individual sounds
+- AKA "Sample Editors"
+- Adobe Audition, Audacity, Amadeus
+---
+## Non Destructive
+![](/Game-231/assets/pro-tools-editing.jpeg) <!-- .element: height="200px" -->
+- Used for combining (mixing) several sounds
+- More common
+- Introduces idea of mixing, and signal flow
+- Pro Tools, Ableton Live, Cubase, Logic, Garage Band
+---
+## Hands on with Adobe Audition
+Let's clean up [this file](/Game-231/assets/luxury-car-commercial-raw-take.wav)
+- download file
+- open with Adobe Audition
+- trim silences
+- normalize
+- adjust frequencies with EQ
+  - sounds "nasally"
+---
+## Editing Basics
+- How to cut sound
+- cut at silences if possible
+- cut at "zero crossings"
+---
+## Class Lab: Cut Silences
+---
+## Volume and "Fades"
+- volume measured in dB
+  - in this case dBFS (decibel full scale)
+    - 0 dBFS is maximum, all other values negative
+- Normalization
+  - bring loudest part of clip to max (or some other value)
+- Fades
+  - changes volume over time
+  - good for introducing sound, or hiding edits
+---
+## Class Lab: Normalize the clip
+- Effects -> Amplitude and Compression -> Normalize
+---
+## Equalization, aka EQ
+[Video Identifying EQ bands](https://www.youtube.com/watch?v=0Ls7ZGH1PAk&t=184s)
+---
+## Styles of EQs
+---
+### Graphic EQ
+![](/Game-231/assets/graphic-eq.jpeg)
+- you may have seem this on devices or software
+- fixed EQ bands
+- fixed widths
+---
+### Parametric EQ
+![](/Game-231/assets/parametric-eq.jpeg)
+- adjustable bands and curves
+- frequency
+  - which frequency to center adjustment on
+- gain
+  - how much to amplify or reduce frequency
+- Q/width
+  - how many adjacent frequencies will be changed
+---
+## EQ Curves
+![](/Game-231/assets/eq-curve-symbols.gif) <!-- .element: height="400px" -->
+---
+### Peak
+- amplify or attenuate frequencies around some center frequency
+- using Q / width for finer / broader control
+---
+### high shelf
+amplify or attenuate all frequencies above a freq
+### low shelf
+amplify or attenuate all frequencies below a freq
+---
+### Highpass
+- cuts off low frequencies below a point
+- "passes" frequencies above that point
+
+### Lowpass
+- cuts off high frequencies above a point
+- "passes" low frequencies below that point
+---
+## Class Lab: Expriment with EQ
+- find and reduce low frequency room resonance with peak eq
+- find and reduce "nasal" quality with peak eq
+- use high shelf to increase high frequency articulation
+- use high pass to cut off all frequencies below 60hz
+- render new file
+---
+# Exercise 2: Sourcing Sounds
+- [Exercise 2](https://canvas.apu.edu/courses/45722/assignments/798500)
+- Includes an asset sheet
+- Find sounds for each asset
+- Pay attention to provided specs
+- Files will need to be uploaded
+</textarea>
+</section>
+    <!-- slides -->
+      </div>
+      <!-- reveal -->
+    </div>
+    <script src="js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js" integrity="sha512-uQGK5PLqAxTaCXSpiQXLYo93HzIRCBUek4jab5gDky9RN621pYpOh1oSxfmG301wW6OU4s8Bk0JDfi77JMZRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js" integrity="sha512-ik0i3CQNgrNfRPUyZGlVqKGpxWR//UV0Y+4y6FHeHvaX/T/TM2nLyjCDQr6Nl/VZrNF8zjkiQ/YL0bsT9GsbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sound.js"></script>
+    <script> Reveal.initialize({
+         // center: false,
+         plugins: [ RevealMarkdown ],
+         margin: 0.01
+     });
+    </script>
+    <script> Reveal.on( 'slidechanged', event => {
+         window.loadSoundContent();
+     } ); </script>
+    <!-- <script> Reveal.slide( 100 ); </script> -->
+  </body>
+</html>

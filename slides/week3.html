@@ -1,0 +1,244 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css" integrity="sha512-A5PKBHoJQHdKjxpwyV+VhMsK7L3MMV1Ch2++rS0bn3xX8+5qJb3WpPvwJH1eqb6iMRtotfiOO7Jhl1qQ02Rwuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/beige.min.css" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/sound.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h1 class="r-fit-text">Game 231</h1>
+            <h2>Week 3</h2>
+            <h2>Sound Tools: Advanced Audio Editing</h2>
+        </section>
+        <section data-markdown><textarea data-template>
+## Catch up
+- Everyone have Books?
+- Where should I put reading assignemts
+  - In canvas?
+- Everyone have headphones?
+- Assignment 2?
+  - Will accept extension since we don't know where our beautiful sound library went
+---
+# "Advanced" Sound Editing Concepts
+when volume, fades and EQ aren't enough...
+---
+### Speed and Pitch
+- Pitch vs "frequency"
+  - Pitch is a musical term that corresponds to frequency
+  - However, a note with a certain fundemental pitch may have several component frequencies
+---
+### Speed and Pitch
+- Speed and pitch (IE: frequency) are related by default
+  - Slowing down a record or tape increases the total time of the track, and reduces the overall pitch
+  - every frequency is _shifted_ down, meaning some of the top frequencies in the original dissappear
+---
+## Lab: Slow down a clip
+- download this [drum loop](http://nigelharsch.com/Game-231/assets/drum-loop-1.wav)
+- load it into Audition
+- Effects -> Time and Pitch -> Streth and Pitch
+  - Lock stretch and pitch
+- Notice that length changes
+- Show Spectrograph
+  - notice that frequencies are shifted down
+---
+- But what if we want to slow down without dropping pitch?
+- Or drop pitch without slowing down?
+---
+### Lab: Slow down or pitch down independently
+- Effects -> Time and Pitch -> Streth and Pitch
+  - unselect "lock stretch and pitch..."
+- adjust speed
+- adjust pitch
+- change algorithm
+---
+- Extreme stretching or pitch shifting can sound "artificial"
+
+### Some uses
+  - slowing down or speeding up
+  - creative uses
+    - trippy, dreamy
+  - adding more bass content to a clip (where no bass exists)
+    - layer a pitch shifted version on top of the normal version, mix to taste
+---
+## Reversing
+- plays sound backwards
+- pretty simple
+---
+### Lab: reverse a section
+- select a portion of the clip
+- Effects -> Reverse
+---
+### Reverse uses
+- creative uses
+  - sounds trippy
+  - rewind
+---
+## Reverb and Delay
+AKA "Time Based Effects"
+- Unlike previous effects, leaves original sound as is, but adds "reflections"
+- Adds a sense of "space" to sound
+  - reflections tell us alot about where we are
+---
+### Delay (aka Echo)
+Delay is simply a repition of the sound
+- usually at a decreasing volume
+- sometimes decreasing EQ
+- simple delay is one repeat over a fixed interval
+  - usually measured in milliseconds
+- complex delays
+  - more than one repeat interval
+  - some effects can be applied to repeats
+---
+### Lab: Add Delay
+- download this [anvil](http://nigelharsch.com/Game-231/assets/anvil.wav)
+- load file into audition
+- select all
+- Effects -> Delay and Echo -> Echo
+- Adjust Delay Time
+- Adjust Feedback
+---
+### Delay Terms
+- Delay time
+  - How much time to wait before repeating sound
+- Feedback
+  - Increases/Decreses the amount of repeats
+    - sometimes called "repeats"
+- EQ / Tone
+  - The EQ to apply to each repeat
+  - usually repeated again on each repeat, so repeasts "die out"
+    - sounds more natural
+  - sometimes called "tone"
+- Mix
+  - how loud are repeats
+  - sometimes called "wet/dry"
+---
+## Reverb
+Reverb applies many repeats, very close together, such that they "smear" together
+- don't hear distinct echos, but a "tail" of sound
+- sounds "wet" compared to delay
+- generally sounds more natural than delay
+---
+### Lab: add some reverb
+- using our anvil clip in audition
+- Effects -> Reverb -> Reverb
+- Play with decay time
+- Play with pre-delay
+- Play with diffusion
+- Play with wet/dry
+---
+### Reverb Terms
+- Decay
+  - time the reverb "tail" lasts
+  - more decay makes the space sound bigger
+- Pre Delay
+  - time to wait before hearing reverb
+  - like adding one delay echo
+  - longer pre-delay sounds like larger space
+    - sometimes creates clarity by giving original sound more space before the effect is heard
+---
+### Reverb Terms
+- Diffusion
+  - the "density" of the reverb tail
+  - can change how low end reacts
+- Damping (called Perception in Audition)
+  - how reflective vs how absorbant the room is
+  - more damping sounds "drier"
+- Wet/Dry
+  - how much original signal vs reverb
+---
+## Compression, Gate, Expander
+Together, called "dynamics"
+- all effect the "dynamic range" of the sound
+  - "dynamic range" is the volume difference between softest and loudest sound
+---
+### Compression
+- compression "squeezes" the dynamic range
+- makes the overall volume more similar
+- will make the overall sound lower
+  - but if then amplified, the overall sound will sound louder than the original
+---
+### Lab: compress a drum loop
+- open drum loop in audition
+- select all
+- Effects -> Amplitude and Compression -> Dynamics
+- set threshold in middle
+- play with ratio
+- play with makeup gain
+- play with attack and release
+---
+### Compression Terms
+- Threshold
+  - where the effect engages
+- Ratio
+  - the amount of volume to reduce (once it's above threshold)
+  - more ratio == more "squeeze"
+- Attack
+  - Time to wait before engaging
+  - longer attack allows more of the "attack" of the drums
+- Release
+  - how long it takes effect to disengage
+---
+### When to use compression
+- when you've normalized a sound but it's still too quiet
+- when you want something to sound "fatter" or "thicker"
+---
+## Distortion
+- adds complex harmonic interaction
+- makes things "sound fuzzy" or "messed up"
+---
+### Lab: add distortion
+- use drum loop
+- Effects -> Special -> Guitar Suite
+- bypass filter, compressor and amplifier
+- play with distortion amound and distortion type
+---
+### When to use distortion
+- when you want something to sound "dirty"
+- when you have a loud sound that still isn't "loud enough"
+  - make the speakers sound like they're breaking, even if they aren't
+---
+## A note of effect order
+Effect order matters!
+- violing -> distortion -> reverb
+  - that loud violin is in a big hall
+- source -> reverb -> distortion
+  - that violin recording sounds messed up
+- _usually_ dynamics (compression) are at the beginning
+- _usually_ "wet" effects (reverb and delay) are at the end
+- *but not always
+---
+## Lab: File Type, Bit Depth and Frequency
+When saving sounds, be mindful of these
+- File -> Save As
+- choose file type
+- change bit depth and sample rate
+---
+## Assignments
+- Read Level 5: Sound Design in Games
+- [Exercise 3: Ui Sound Library](https://canvas.apu.edu/courses/45722/assignments/798501) - due next week
+> You are tasked with creating User Interface sounds for the menu page and inventory screen of an adventure/survival game. These sounds are non diagetic, but they should fit the overall theme of the game, which is "outdoor survival". The client requested that the sounds "sound organic" and "not electronic".
+        </textarea></section>
+
+    <!-- slides -->
+      </div>
+      <!-- reveal -->
+    </div>
+    <script src="js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js" integrity="sha512-uQGK5PLqAxTaCXSpiQXLYo93HzIRCBUek4jab5gDky9RN621pYpOh1oSxfmG301wW6OU4s8Bk0JDfi77JMZRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js" integrity="sha512-ik0i3CQNgrNfRPUyZGlVqKGpxWR//UV0Y+4y6FHeHvaX/T/TM2nLyjCDQr6Nl/VZrNF8zjkiQ/YL0bsT9GsbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sound.js"></script>
+    <script> Reveal.initialize({
+         // center: false,
+         plugins: [ RevealMarkdown ],
+         margin: 0.01
+     });
+    </script>
+    <script> Reveal.on( 'slidechanged', event => {
+         window.loadSoundContent();
+     } ); </script>
+    <!-- <script> Reveal.slide( 100 ); </script> -->
+  </body>
+</html>
