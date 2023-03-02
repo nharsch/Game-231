@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css" integrity="sha512-A5PKBHoJQHdKjxpwyV+VhMsK7L3MMV1Ch2++rS0bn3xX8+5qJb3WpPvwJH1eqb6iMRtotfiOO7Jhl1qQ02Rwuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/beige.min.css" integrity="sha512-TzNEhkjNeiWrW7MYy7MlzBqBxqD7Ho7HtFpcW0rAQW4OK8pwZ37fvHKKpJPAmUdHbUnmmKdGwhB5ulLWgQ/l0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/sound.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h1 class="r-fit-text">Game 231</h1>
+            <h2>Week 7</h2>
+            <h2>Pro Tools Review and Lab</h2>
+        </section>
+        <section data-markdown>
+            <textarea data-template>
+### Announcements
+- We're halfway there
+- The real stuff starts after break
+  - Actually working in games
+  - Unity
+  - FMOD
+- [Project 1](https://canvas.apu.edu/courses/45722/assignments/798503) slightly updated
+  - must post video to Art Station account
+    - Samoff wants to see your work
+- Voice Over projects due tonight
+  - We'll use class time to finish them up
+---
+### Reading Review
+- [Level 9 - Prepping Audio](https://nigelharsch.com/Game-231/The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-9-preparing-audio)
+- [Level 6 - Composing](https://nigelharsch.com/Game-231/The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-6-composing)
+---
+## Lab: Pro Tools Review for Project 1
+- how to load video into session
+- how to remove existing video sound
+- cutting audio
+- exporting new video
+---
+## Assigned Reading
+- Level 10 - Game Engines
+- Level 11 - Intro to Unity
+
+</textarea>
+</section>
+    <!-- slides -->
+      </div>
+      <!-- reveal -->
+    </div>
+    <script src="js/base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js" integrity="sha512-uQGK5PLqAxTaCXSpiQXLYo93HzIRCBUek4jab5gDky9RN621pYpOh1oSxfmG301wW6OU4s8Bk0JDfi77JMZRuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/plugin/markdown/markdown.min.js" integrity="sha512-ik0i3CQNgrNfRPUyZGlVqKGpxWR//UV0Y+4y6FHeHvaX/T/TM2nLyjCDQr6Nl/VZrNF8zjkiQ/YL0bsT9GsbVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sound.js"></script>
+    <script> Reveal.initialize({
+         // center: false,
+         plugins: [ RevealMarkdown ],
+         margin: 0.01
+     });
+    </script>
+    <script> Reveal.on( 'slidechanged', event => {
+         window.loadSoundContent();
+     } ); </script>
+    <!-- <script> Reveal.slide( 100 ); </script> -->
+  </body>
+</html>

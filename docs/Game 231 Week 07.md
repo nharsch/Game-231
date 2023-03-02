@@ -5,6 +5,8 @@
 # Week 7 - 3/2/23 
 - Last week before spring break
 
+## [slides](slides/week7.html)
+
 ## Lecture Notes
 Prepping Audio
 Game Music

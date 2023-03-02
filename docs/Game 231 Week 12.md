@@ -3,7 +3,6 @@
 - [[Game 231 Week 13|Next Week]]
 
 # Week 12 - 4/5/23
-- Easter Break Next Week
 
 ## Lecture Notes
 - Did anyone get FMOD/Unity set up for working
