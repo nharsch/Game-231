@@ -32,7 +32,7 @@ Every Wednesday, 6:00pm
 	- GAME SCENE project assigned
 - 3/1 [[Game 231 Week 07]] - Composing, Game Music, Pro Tools Work
 - 3/11 Week 9 - Spring Break, no class
-- 3/15 [[Game 231 Week 9]] - Intro to Game Engines
+- 3/15 [[Game 231 Week 09]] - Intro to Game Engines
 	- GAME SCENE project due
 	- FOOTSTEPS assigned
 - 3/22 [[Game 231 Week 10]] - Unity, Basic Audio in Unity

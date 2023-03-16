@@ -4,6 +4,7 @@
 
 # Week 9 - 3/15/23
 GAME SCENE project due
+## [slides](slides/week9.html)
 
 ## Lecture Notes
 Game Engines
