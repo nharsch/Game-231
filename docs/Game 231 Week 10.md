@@ -13,7 +13,6 @@ Introduction to Unity and Audio for Unity
 	- how is this going?
 
 ### Reading
-- [[The Essential Guide to Game Audio Book Notes#Level 11 - Intro to Unity]]
 - [[The Essential Guide to Game Audio Book Notes#Level 12 - Basic Audio in Unity 3D]]
 
 ### Week 10 Review Basic Audio in Unity
@@ -33,5 +32,5 @@ Introduction to Unity and Audio for Unity
 ### Reading
 - [[The Essential Guide to Game Audio Book Notes#Level 8 - Middleware]]
 
-### Preview of FMOD
-- [FMOD Example Project](https://github.com/APUGames/FMODProject)
+### Footsteps Project
+- [FMOD Example Project](https://canvas.apu.edu/courses/45722/assignments/798504)

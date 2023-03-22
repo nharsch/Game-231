@@ -58,10 +58,10 @@ Every Wednesday, 6:00pm
 [Exercise 4](https://canvas.apu.edu/courses/45722/assignments/805177)
 
 ### Project 1: Game Animatic/Scene - Due week 10
-[Project 1 Repo](https://github.com/APUGames/Game-220-Project-1)
+[Project 1](https://canvas.apu.edu/courses/45722/assignments/798503)
 
 ### Project 2: Footsteps Project - Due week 12
-[Project 2 Repo](https://github.com/APUGames/Game-220-Project-2-Footsteps)
+[Project 2](https://canvas.apu.edu/courses/45722/assignments/798504)
   - record footsteps on multiple surfaces
   - looping
   
