@@ -1,0 +1,1185 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Audio%20Effects%20Guide/">
+      
+      
+        <link rel="next" href="../Game%20231%20Week%2002/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
+    
+    
+      
+        <title>Game 231 Week 01 - Game 220 - Sound Design for Games</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#week-1-11823" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Game 220 - Sound Design for Games" class="md-header__button md-logo" aria-label="Game 220 - Sound Design for Games" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Game 220 - Sound Design for Games
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Game 231 Week 01
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Game 220 - Sound Design for Games" class="md-nav__button md-logo" aria-label="Game 220 - Sound Design for Games" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Game 220 - Sound Design for Games
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adobe%20Audition%20Resources/" class="md-nav__link">
+        Adobe Audition Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Audio%20Effects%20Guide/" class="md-nav__link">
+        Audio Effects Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Game 231 Week 01
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Game 231 Week 01
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slides" class="md-nav__link">
+    slides
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-notes" class="md-nav__link">
+    Lecture Notes
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-me" class="md-nav__link">
+    About Me
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#course-intro" class="md-nav__link">
+    Course Intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-sound" class="md-nav__link">
+    What is sound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sounds-as-waveforms" class="md-nav__link">
+    Sounds as Waveforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoustic-sound-vs-electric-vs-digital" class="md-nav__link">
+    acoustic sound vs electric vs digital
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#describing-audio" class="md-nav__link">
+    Describing Audio
+  </a>
+  
+    <nav class="md-nav" aria-label="Describing Audio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-subjective-terms" class="md-nav__link">
+    In Subjective Terms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigments" class="md-nav__link">
+    Assigments
+  </a>
+  
+    <nav class="md-nav" aria-label="Assigments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1" class="md-nav__link">
+    Exercise 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigned-reading" class="md-nav__link">
+    Assigned Reading:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-class-notes" class="md-nav__link">
+    In Class Notes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2002/" class="md-nav__link">
+        Game 231 Week 02
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2003/" class="md-nav__link">
+        Game 231 Week 03
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2004/" class="md-nav__link">
+        Game 231 Week 04
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2005/" class="md-nav__link">
+        Game 231 Week 05
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2006/" class="md-nav__link">
+        Game 231 Week 06
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2007/" class="md-nav__link">
+        Game 231 Week 07
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2009/" class="md-nav__link">
+        Game 231 Week 09
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2010/" class="md-nav__link">
+        Game 231 Week 10
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2011/" class="md-nav__link">
+        Game 231 Week 11
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2012/" class="md-nav__link">
+        Game 231 Week 12
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2014/" class="md-nav__link">
+        Game 231 Week 14
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2015/" class="md-nav__link">
+        Game 231 Week 15
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2016%20-%20Finals/" class="md-nav__link">
+        Game 231 Week 16   Finals
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pro%20Tools%20Resources/" class="md-nav__link">
+        Pro Tools Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/" class="md-nav__link">
+        The Essential Guide to Game Audio Book Notes
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slides" class="md-nav__link">
+    slides
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lecture-notes" class="md-nav__link">
+    Lecture Notes
+  </a>
+  
+    <nav class="md-nav" aria-label="Lecture Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-me" class="md-nav__link">
+    About Me
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#course-intro" class="md-nav__link">
+    Course Intro
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-sound" class="md-nav__link">
+    What is sound
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sounds-as-waveforms" class="md-nav__link">
+    Sounds as Waveforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acoustic-sound-vs-electric-vs-digital" class="md-nav__link">
+    acoustic sound vs electric vs digital
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#describing-audio" class="md-nav__link">
+    Describing Audio
+  </a>
+  
+    <nav class="md-nav" aria-label="Describing Audio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-subjective-terms" class="md-nav__link">
+    In Subjective Terms
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assigments" class="md-nav__link">
+    Assigments
+  </a>
+  
+    <nav class="md-nav" aria-label="Assigments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1" class="md-nav__link">
+    Exercise 1:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigned-reading" class="md-nav__link">
+    Assigned Reading:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-class-notes" class="md-nav__link">
+    In Class Notes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<ul>
+<li>[[Game 231 index|Home]]</li>
+<li><a href="../Game%20231%20Week%2002/">Next Week</a></li>
+</ul>
+<h1 id="week-1-11823">Week 1 - 1/18/23<a class="headerlink" href="#week-1-11823" title="Permanent link">&para;</a></h1>
+<h2 id="slides"><a href="../slides/week1.html">slides</a><a class="headerlink" href="#slides" title="Permanent link">&para;</a></h2>
+<h2 id="lecture-notes">Lecture Notes<a class="headerlink" href="#lecture-notes" title="Permanent link">&para;</a></h2>
+<h3 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Resources<ul>
+<li>Assignments being added to Canvas</li>
+<li>Book</li>
+<li>Slack</li>
+</ul>
+</li>
+<li>How class will work<ul>
+<li>lecture heavy at first</li>
+<li>more of a workshop toward the end</li>
+<li>assignments submitted through git</li>
+<li>exercises count as full credit when full exercise is submitted<ul>
+<li>feedback isn't a markdown</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Student Introductions<ul>
+<li>what's your major?</li>
+<li>what are you looking to learn in this class?</li>
+</ul>
+</li>
+</ul>
+<h3 id="about-me">About Me<a class="headerlink" href="#about-me" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://nigelharsch.com">nigelharsch.com</a></li>
+<li>Theatrical Sound Designer and Composer<ul>
+<li>Sometimes films - Sometimes games</li>
+</ul>
+</li>
+<li>Web Developer</li>
+<li>Sound isn't new to me</li>
+<li>Game design is</li>
+</ul>
+<h3 id="course-intro">Course Intro<a class="headerlink" href="#course-intro" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Main Goals<ul>
+<li>Basics of Sound<ul>
+<li>What it is</li>
+<li>How to talk about it</li>
+<li>Sound as a material</li>
+</ul>
+</li>
+<li>Working with Sound<ul>
+<li>Sourcing</li>
+<li>Editing<ul>
+<li>Adobe Audition <ul>
+<li>To teach destructive editing</li>
+</ul>
+</li>
+<li>Pro Tools<ul>
+<li>For multitracking, to teach signal flow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recording<ul>
+<li>Voice Over</li>
+<li>Foley</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sound's role in games</li>
+<li>Technical implementation<ul>
+<li>Asset Sheets</li>
+<li>Unity Integration</li>
+<li>Middleware</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="what-is-sound">What is sound<a class="headerlink" href="#what-is-sound" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Examples from https://ciechanow.ski/sound/</li>
+<li><a href="https://www.youtube.com/watch?v=hfzCLClVO8g">quick sound intro video</a></li>
+<li>changes in sound pressure level, detected by the ear<ul>
+<li>varies in different animals</li>
+</ul>
+</li>
+<li>How we hear   <ul>
+<li><img alt="ear-diagram.png" src="../assets/ear-diagram.png" /></li>
+<li>two ears = stereo<ul>
+<li>volume differences and slight delays in sounds tell us position</li>
+</ul>
+</li>
+<li>huge dynamic range of hearing<ul>
+<li>pin drop to jet engine </li>
+</ul>
+</li>
+<li>we don't hear all frequencies equally<ul>
+<li>more sensitive to human voice</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="sounds-as-waveforms">Sounds as Waveforms<a class="headerlink" href="#sounds-as-waveforms" title="Permanent link">&para;</a></h3>
+<ul>
+<li>what is a waveform, what does it represent?<ul>
+<li>temproal, time based</li>
+<li>aplitude changes over time<ul>
+<li><img alt="wave-graph.png" src="../assets/wave-graph.png" /></li>
+</ul>
+</li>
+<li>relative to zero point<ul>
+<li>negative and positive phase values</li>
+<li>0 is quiet</li>
+</ul>
+</li>
+<li>Amplitude is distance from 0 point</li>
+<li>frequency is how many times it crosses zero point<ul>
+<li>one hertz = one oscilation per second</li>
+<li>we hear from 20hz -&gt; 20khz<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hearing_range">Hearing Range</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>when mixed, produce <a href="https://en.wikipedia.org/wiki/Wave_interference">interference</a><ul>
+<li>caused by waves amplifying or cancelling each other</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>complex waves: many frequencies combined<ul>
+<li>simple waves have one frequency<ul>
+<li>sine wave</li>
+<li>square wave</li>
+</ul>
+</li>
+<li>real sounds are complex<ul>
+<li>piano vs sine<ul>
+<li><img alt="sine-wave.png" src="../assets/sine-wave.png" /></li>
+<li>[[sine-220hz.wav]]</li>
+<li><img alt="piano-wave.png" src="../assets/piano-wave.png" /></li>
+<li>[[piano-220hz.wav]]</li>
+</ul>
+</li>
+<li>piano note will have fundemental frequency    </li>
+<li>will also have high and low "harmonics"<ul>
+<li>string harmonics<ul>
+<li><img alt="Harmonic_partials_sm.jpeg" src="../assets/Harmonic_partials_sm.jpeg" /></li>
+</ul>
+</li>
+<li>piano resonance</li>
+<li>room reflections</li>
+</ul>
+</li>
+<li>when these waves are added <em>one</em> new wav is perceived by an ear (or mic)*<ul>
+<li>*2 if stereo</li>
+<li><img alt="adding-waves.gif" src="../assets/adding-waves.gif" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>attack and decay<ul>
+<li>our piano again<ul>
+<li><img alt="piano-attack-decay.png" src="../assets/piano-attack-decay.png" /></li>
+</ul>
+</li>
+<li>a car passing<ul>
+<li><img alt="car-passes.png" src="../assets/car-passes.png" /></li>
+<li><a href="../assets/car-passes.wav">car-passes.wav</a></li>
+</ul>
+</li>
+<li>a drum beat <ul>
+<li><img alt="drum-loop-1.png" src="../assets/drum-loop-1.png" /></li>
+<li>[[drum-loop-1.wav]]</li>
+</ul>
+</li>
+<li>a conversation<ul>
+<li><img alt="convo.png" src="../assets/convo.png" /></li>
+<li><a href="../assets/convo.wav">convo.wav</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="acoustic-sound-vs-electric-vs-digital">acoustic sound vs electric vs digital<a class="headerlink" href="#acoustic-sound-vs-electric-vs-digital" title="Permanent link">&para;</a></h3>
+<ul>
+<li>acoustic is changes in atmospheric pressure</li>
+<li>how do we capture and store that?<ul>
+<li>phonograph<ul>
+<li>acoustic audio to etchings on a medium</li>
+</ul>
+</li>
+<li>analog electrical audio<ul>
+<li>analog electric audio is voltage in wire<ul>
+<li>converted from acoustic using microphones and speakers</li>
+</ul>
+</li>
+<li>stored on tape</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>digital audio is a stream of numbers representing voltage measured n times a second</li>
+<li>acoustic and analog are continuous, digital is discrete (pixelated)</li>
+<li><img alt="microphone-diagram.png" src="../assets/microphone-diagram.png" /></li>
+<li><img alt="sampling-audio.png" src="../assets/sampling-audio.png" /><img alt="pcm file.jpeg" src="../assets/pcm-file.jpeg" /></li>
+<li><img alt="analog-to-digital-conversion.png" src="../assets/analog-to-digital-conversion.png" /></li>
+<li>what digital sound gets us<ul>
+<li>consistent playblack</li>
+<li>smaller storage</li>
+<li>digital tools</li>
+<li>synthesis</li>
+<li>portability</li>
+<li>accessability</li>
+<li>DAWs</li>
+</ul>
+</li>
+</ul>
+<h3 id="describing-audio">Describing Audio<a class="headerlink" href="#describing-audio" title="Permanent link">&para;</a></h3>
+<h4 id="in-subjective-terms">In Subjective Terms<a class="headerlink" href="#in-subjective-terms" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Common subjective words:<ul>
+<li>quiet</li>
+<li>loud</li>
+<li>muddy</li>
+<li>boomy</li>
+<li>boxy</li>
+<li>honky</li>
+<li>bright</li>
+<li>warm</li>
+<li>tinny</li>
+<li>wet</li>
+<li>dry</li>
+<li>fuzzy</li>
+<li>lofi</li>
+<li>harsh</li>
+</ul>
+</li>
+<li>What words do you use?</li>
+<li>Many subjective words are talking about objective properties of sound</li>
+<li>Most are about EQ<ul>
+<li>Muddy<ul>
+<li>lacks definition or articulation</li>
+<li>could be a lack of high frequency content</li>
+<li>could be too much low frequency content</li>
+<li>could be too much reverb (more on that later)</li>
+</ul>
+</li>
+<li>boomy, boxy<ul>
+<li>often has to do with something resonating<ul>
+<li>often small rooms</li>
+<li>if one resonant frequency, sometimes easy to fix</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>bright, tinny<ul>
+<li>too much high end</li>
+</ul>
+</li>
+<li>warm<ul>
+<li>has pleasing low mid</li>
+<li>could describe harmonic distortion or compression</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Some are about reverb and reflections<ul>
+<li>wet<ul>
+<li>lots of reverb</li>
+</ul>
+</li>
+<li>dry, direct<ul>
+<li>very little or no reflections</li>
+</ul>
+</li>
+<li>honky, boxy<ul>
+<li>too many early reflections</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Some are so vague to be almost useless<ul>
+<li>fuzzy<ul>
+<li>eaxtraneous, non signal noise<ul>
+<li>could be background</li>
+<li>could be recording artifacts</li>
+</ul>
+</li>
+<li>bad EQ</li>
+<li>distortion</li>
+<li>signal loss</li>
+<li>background noise</li>
+<li>digital compression aritifacts, bitrate</li>
+</ul>
+</li>
+<li>Lofi<ul>
+<li>EQ that favors midrange, like phones, phone speakers</li>
+<li>Low bitrate or digital compression artifacts</li>
+<li>analog tape hiss, warble</li>
+<li>vinyl surface noise</li>
+<li>Genres of music<ul>
+<li>"Lofi beats to study to"</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="assigments">Assigments<a class="headerlink" href="#assigments" title="Permanent link">&para;</a></h2>
+<h3 id="exercise-1">Exercise 1:<a class="headerlink" href="#exercise-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://canvas.apu.edu/courses/45722/assignments/798498">Exercise 1</a></li>
+</ul>
+<h3 id="assigned-reading">Assigned Reading:<a class="headerlink" href="#assigned-reading" title="Permanent link">&para;</a></h3>
+<ul>
+<li>https://ciechanow.ski/sound/<ul>
+<li>just skim through to get a working knowledge of <em>what sound is</em></li>
+</ul>
+</li>
+<li>book<ul>
+<li><a href="../The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#intro">Intro</a></li>
+<li><a href="../The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-1---animation-art-audio">Level 1</a></li>
+<li><a href="../The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-2---brief-history-of-games">Level 2</a></li>
+<li><a href="../The%20Essential%20Guide%20to%20Game%20Audio%20Book%20Notes/#level-3---audio-for-interactive-evironments">Level 3</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="in-class-notes">In Class Notes<a class="headerlink" href="#in-class-notes" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
+      
+    
+  </body>
+</html>

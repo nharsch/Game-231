@@ -1,0 +1,1365 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Pro%20Tools%20Resources/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
+    
+    
+      
+        <title>The Essential Guide to Game Audio Book Notes - Game 220 - Sound Design for Games</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#intro" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Game 220 - Sound Design for Games" class="md-header__button md-logo" aria-label="Game 220 - Sound Design for Games" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Game 220 - Sound Design for Games
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Essential Guide to Game Audio Book Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Game 220 - Sound Design for Games" class="md-nav__button md-logo" aria-label="Game 220 - Sound Design for Games" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Game 220 - Sound Design for Games
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Adobe%20Audition%20Resources/" class="md-nav__link">
+        Adobe Audition Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Audio%20Effects%20Guide/" class="md-nav__link">
+        Audio Effects Guide
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2001/" class="md-nav__link">
+        Game 231 Week 01
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2002/" class="md-nav__link">
+        Game 231 Week 02
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2003/" class="md-nav__link">
+        Game 231 Week 03
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2004/" class="md-nav__link">
+        Game 231 Week 04
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2005/" class="md-nav__link">
+        Game 231 Week 05
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2006/" class="md-nav__link">
+        Game 231 Week 06
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2007/" class="md-nav__link">
+        Game 231 Week 07
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2009/" class="md-nav__link">
+        Game 231 Week 09
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2010/" class="md-nav__link">
+        Game 231 Week 10
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2011/" class="md-nav__link">
+        Game 231 Week 11
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2012/" class="md-nav__link">
+        Game 231 Week 12
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2014/" class="md-nav__link">
+        Game 231 Week 14
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2015/" class="md-nav__link">
+        Game 231 Week 15
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Game%20231%20Week%2016%20-%20Finals/" class="md-nav__link">
+        Game 231 Week 16   Finals
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pro%20Tools%20Resources/" class="md-nav__link">
+        Pro Tools Resources
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          The Essential Guide to Game Audio Book Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        The Essential Guide to Game Audio Book Notes
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-animation-art-audio" class="md-nav__link">
+    Level 1 - Animation, Art, Audio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-brief-history-of-games" class="md-nav__link">
+    Level 2 - Brief History of Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-audio-for-interactive-evironments" class="md-nav__link">
+    Level 3 - Audio for Interactive Evironments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-styles-and-genres" class="md-nav__link">
+    Level 4 - Styles and Genres
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-5-sound-design-in-games" class="md-nav__link">
+    Level 5 - Sound Design in Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-6-composing" class="md-nav__link">
+    Level 6 - Composing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-7-voice-over" class="md-nav__link">
+    Level 7 - Voice Over
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-8-middleware" class="md-nav__link">
+    Level 8 - Middleware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-9-preparing-audio" class="md-nav__link">
+    Level 9 - Preparing Audio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-10-game-engines" class="md-nav__link">
+    Level 10 - Game Engines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-11-intro-to-unity" class="md-nav__link">
+    Level 11 - Intro to Unity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-12-basic-audio-in-unity-3d" class="md-nav__link">
+    Level 12 - Basic Audio in Unity 3D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-13-web-and-mobile-games" class="md-nav__link">
+    Level 13 - Web and Mobile Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-14-jobs-in-game-audio" class="md-nav__link">
+    Level 14 - Jobs in Game Audio
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-animation-art-audio" class="md-nav__link">
+    Level 1 - Animation, Art, Audio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-brief-history-of-games" class="md-nav__link">
+    Level 2 - Brief History of Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-audio-for-interactive-evironments" class="md-nav__link">
+    Level 3 - Audio for Interactive Evironments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-styles-and-genres" class="md-nav__link">
+    Level 4 - Styles and Genres
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-5-sound-design-in-games" class="md-nav__link">
+    Level 5 - Sound Design in Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-6-composing" class="md-nav__link">
+    Level 6 - Composing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-7-voice-over" class="md-nav__link">
+    Level 7 - Voice Over
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-8-middleware" class="md-nav__link">
+    Level 8 - Middleware
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-9-preparing-audio" class="md-nav__link">
+    Level 9 - Preparing Audio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-10-game-engines" class="md-nav__link">
+    Level 10 - Game Engines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-11-intro-to-unity" class="md-nav__link">
+    Level 11 - Intro to Unity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-12-basic-audio-in-unity-3d" class="md-nav__link">
+    Level 12 - Basic Audio in Unity 3D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-13-web-and-mobile-games" class="md-nav__link">
+    Level 13 - Web and Mobile Games
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-14-jobs-in-game-audio" class="md-nav__link">
+    Level 14 - Jobs in Game Audio
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>The Essential Guide to Game Audio Book Notes</h1>
+
+<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
+<h2 id="level-1-animation-art-audio">Level 1 - Animation, Art, Audio<a class="headerlink" href="#level-1-animation-art-audio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>What is a platform</li>
+<li>Story vs Interactivity</li>
+</ul>
+<h2 id="level-2-brief-history-of-games">Level 2 - Brief History of Games<a class="headerlink" href="#level-2-brief-history-of-games" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Video Game History<ul>
+<li>Primitive synths to PCM</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-3-audio-for-interactive-evironments">Level 3 - Audio for Interactive Evironments<a class="headerlink" href="#level-3-audio-for-interactive-evironments" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Non linearity</li>
+<li>Digital Sound Basics<ul>
+<li>Sample Rate</li>
+<li>Bit Depth</li>
+</ul>
+</li>
+<li>File Compression<ul>
+<li>not to be confused with "Dynamic Compression", which deals with volume</li>
+</ul>
+</li>
+<li>MIDI</li>
+<li>Synthesis<ul>
+<li>analog synthesis<ul>
+<li><a href="https://www.youtube.com/watch?v=la3coK5pq5w">NES Sounds</a></li>
+</ul>
+</li>
+<li>FM</li>
+</ul>
+</li>
+<li>Digital Audio</li>
+<li>Middleware</li>
+<li>Though much more resources available on PC &amp; Platform, eesources now constrained by mobile device capacity, internet speed for online</li>
+</ul>
+<h2 id="level-4-styles-and-genres">Level 4 - Styles and Genres<a class="headerlink" href="#level-4-styles-and-genres" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Gameplay Mechanics</li>
+<li>Types of Games</li>
+</ul>
+<h2 id="level-5-sound-design-in-games">Level 5 - Sound Design in Games<a class="headerlink" href="#level-5-sound-design-in-games" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sound changes perception of events<ul>
+<li>collision or pass through example</li>
+</ul>
+</li>
+<li>Practical sound effects played live</li>
+<li>Foley</li>
+<li>Diagetic vs Non Diagetic<ul>
+<li>Diagetic = In reality of world</li>
+<li>Non Diagetic = Music, voice over, flashback audio</li>
+</ul>
+</li>
+<li>Dynamic Audio<ul>
+<li>Audio designed to change in responses to changes in game</li>
+</ul>
+</li>
+<li>Interactive Audio<ul>
+<li>Specifically responds to user player directly<ul>
+<li>Sword swoosh sound</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Adaptive Audio<ul>
+<li>Reaction to gameplay rather than user directly<ul>
+<li>Music changes from level to level</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sound Effects Layers  <ul>
+<li>Background Ambience</li>
+<li>Foreground sounds</li>
+<li>Interface sounds</li>
+</ul>
+</li>
+<li>Sound Formats<ul>
+<li>Open, uncompressed<ul>
+<li>wav</li>
+<li>aiff</li>
+</ul>
+</li>
+<li>Open, compressed<ul>
+<li>mp3</li>
+<li>ogg</li>
+<li>FLAC</li>
+<li>AAC</li>
+</ul>
+</li>
+<li>Others</li>
+</ul>
+</li>
+<li>Birth of Sound Design<ul>
+<li>Kind of Game</li>
+<li>Target Audience</li>
+<li>Game pace</li>
+<li>Platform</li>
+<li>Audio budget</li>
+<li>Hardware space</li>
+</ul>
+</li>
+<li>Asset List<ul>
+<li>List of every sound that occurs in the game</li>
+<li>Name of sound broken out by type (music, sfx, voice over)</li>
+<li>filename</li>
+<li>description</li>
+<li>one shot / looping</li>
+</ul>
+</li>
+<li>Where do sounds come from?</li>
+<li>Editing techniques<ul>
+<li>One shots</li>
+<li>Looping</li>
+<li>EQ</li>
+<li>Compression</li>
+<li>Delay</li>
+<li>Reverb</li>
+<li>Sound Layering</li>
+<li>3D Sound<ul>
+<li>mostly handled by game engine</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Creating sounds<ul>
+<li>Sound synonyms</li>
+<li>creative reuse<ul>
+<li>wilhelm scream</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Audio Team Roles<ul>
+<li>Audio Director<ul>
+<li>Owns audio</li>
+</ul>
+</li>
+<li>Audio Lead<ul>
+<li>Coordinates sounds</li>
+</ul>
+</li>
+<li>Sound Designer<ul>
+<li>Sources / creates sounds</li>
+</ul>
+</li>
+<li>Audio Programmer<ul>
+<li>Integrates into game engine</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>job types</li>
+</ul>
+<h2 id="level-6-composing">Level 6 - Composing<a class="headerlink" href="#level-6-composing" title="Permanent link">&para;</a></h2>
+<ul>
+<li>New "hybrid" composers</li>
+<li>Thinking about music for a game<ul>
+<li>overall mood and tone</li>
+<li>time and place within game</li>
+<li>Locations within game</li>
+<li>Characters in game</li>
+<li>Pace of Game</li>
+<li>Increase immersion</li>
+</ul>
+</li>
+<li>Form and structure<ul>
+<li>Cinematics</li>
+<li>Interactive</li>
+<li>Looping and branching</li>
+<li>stem mixes</li>
+<li>transitions<ul>
+<li>fade out</li>
+</ul>
+</li>
+<li>Stinger<ul>
+<li>cover transitions</li>
+</ul>
+</li>
+<li>cross fade</li>
+<li>cue to cue<ul>
+<li>with music, needs to happen intelligently</li>
+</ul>
+</li>
+<li>Interactive vs Adaptive music<ul>
+<li>Interactive - user makes changes based on music<ul>
+<li>DDR, RockBand</li>
+</ul>
+</li>
+<li>Adaptive - music responds to changes in game<ul>
+<li>cue changes during battle</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Elements of Music<ul>
+<li>Tempo</li>
+<li>Key</li>
+<li>Instrumentation</li>
+<li>Volume/dynamics</li>
+</ul>
+</li>
+<li>Music Team<ul>
+<li>Music director - oversees creative direction</li>
+<li>producer - oversees creative direction of recording and "production" of music</li>
+<li>composer - writes music<ul>
+<li>composer is often producer these days</li>
+</ul>
+</li>
+<li>Orchestrator - writes music for individual players in orchestral recordings</li>
+<li>recording engineer - handles technical aspects of recording<ul>
+<li>often composer</li>
+</ul>
+</li>
+<li>mix engineer - handles balance of recording<ul>
+<li>often composer</li>
+</ul>
+</li>
+<li>mastering engineer - produces final tracks<ul>
+<li>often composer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>composing techniques</li>
+<li>interactive vs adaptive</li>
+</ul>
+<h2 id="level-7-voice-over">Level 7 - Voice Over<a class="headerlink" href="#level-7-voice-over" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Functions of voice over in games<ul>
+<li>game feedback</li>
+<li>narrative</li>
+<li>dialogue</li>
+</ul>
+</li>
+<li>Roles in VO production<ul>
+<li>Producer </li>
+<li>Writer</li>
+<li>Talent Agent</li>
+<li>VO Actor</li>
+<li>Union vs Non Union</li>
+<li>Voice Director</li>
+<li>Recording Engineer</li>
+</ul>
+</li>
+<li>Scripts<ul>
+<li>many shapes sizes</li>
+<li>will often look different than plays/screenplays, important to communicate the overall character to Actor</li>
+</ul>
+</li>
+<li>Tools<ul>
+<li>Mics<ul>
+<li>Dynamic<ul>
+<li>good for loud sounds</li>
+</ul>
+</li>
+<li>Condenser<ul>
+<li>Need phantom power</li>
+<li>good for clarity</li>
+</ul>
+</li>
+<li>Cardiod/ unidirectional<ul>
+<li>spotlight audio source</li>
+<li>good for VO</li>
+</ul>
+</li>
+<li>omnidirectional<ul>
+<li>flood light audio source</li>
+<li>good for environments, moving targets</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Formats usually PCM 48/44.1k 16/24 bit</li>
+<li>Preparing space<ul>
+<li>quiet</li>
+<li>dead, not many reflections</li>
+</ul>
+</li>
+<li>Editing engineer<ul>
+<li>edit and balances each take</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-8-middleware">Level 8 - Middleware<a class="headerlink" href="#level-8-middleware" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Pre middleware<ul>
+<li>bespoke solutions based on game</li>
+</ul>
+</li>
+<li>Middlware<ul>
+<li>creates a standard tool for audio implementation</li>
+<li>allows integration with game state using events, parameters and hooks</li>
+</ul>
+</li>
+<li>Middleware lets you<ul>
+<li>Develoop basic sound functions like when where are how loud a sound plays</li>
+<li>Create dynamic scores</li>
+<li>Mix and master game audio in real time</li>
+<li>Profile audio in real time</li>
+<li>Create 3D environments</li>
+<li>Generate sound banks</li>
+<li>deploy sound for multiple platforms and markets<ul>
+<li>internationalization</li>
+</ul>
+</li>
+<li>Compress audio</li>
+<li>work with several game engines</li>
+</ul>
+</li>
+<li>3D sound in games<ul>
+<li>Volume and Distance</li>
+<li>Occlusion<ul>
+<li>sound filtered by environment</li>
+</ul>
+</li>
+<li>Obstruction<ul>
+<li>Direct path is muffled but not enlosed</li>
+</ul>
+</li>
+<li>Environment morphing<ul>
+<li>changing reverb based on space</li>
+</ul>
+</li>
+<li>Audio Middleware Structure<ul>
+<li>GUI<ul>
+<li>where the audio work is done</li>
+</ul>
+</li>
+<li>API<ul>
+<li>what the audio programmer uses</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Current tools<ul>
+<li>FMOD Studio</li>
+<li>Wwise</li>
+<li>Others</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-9-preparing-audio">Level 9 - Preparing Audio<a class="headerlink" href="#level-9-preparing-audio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Mixing for Games<ul>
+<li>Bounce sounds out of DAW</li>
+<li>Trim sounds</li>
+<li>Balance all sounds</li>
+<li>create seamless loops</li>
+<li>provide asset list</li>
+<li>note on reverb - usually handled by middleware, so "dry" cues often best</li>
+</ul>
+</li>
+<li>Uses of Looping<ul>
+<li>sound effects<ul>
+<li>walking, machine gun</li>
+</ul>
+</li>
+<li>ambient backgrounds<ul>
+<li>long storm cue</li>
+</ul>
+</li>
+<li>music</li>
+</ul>
+</li>
+<li>Making perfect Loops  <ul>
+<li>loop at zero crossing<ul>
+<li>center point of no volume</li>
+</ul>
+</li>
+<li>if no good zero crossing exists at desires loop point, use fades</li>
+<li>clicks cause by abrupt, sharp changes</li>
+</ul>
+</li>
+<li>Audio format choices<ul>
+<li>uncompressed audio usually better, unless resource constrained</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-10-game-engines">Level 10 - Game Engines<a class="headerlink" href="#level-10-game-engines" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Emergence of Game Engines</li>
+<li>What Game Engines Do<ul>
+<li>render images and 3D models</li>
+<li>import and arrange sound files</li>
+<li>render light </li>
+<li>physics engine</li>
+<li>animation of objects</li>
+<li>AI</li>
+<li>Scripting</li>
+<li>Asset control</li>
+</ul>
+</li>
+<li>Current Engines<ul>
+<li>Unity</li>
+<li>Unreal</li>
+<li>CryEngine</li>
+<li>Stencyl</li>
+<li>Cocos2d-iPhone</li>
+<li>Codea</li>
+</ul>
+</li>
+<li>How Game Engines think about sound<ul>
+<li>sounds are assets, no different thatn any other piece of game</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-11-intro-to-unity">Level 11 - Intro to Unity<a class="headerlink" href="#level-11-intro-to-unity" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Unity Free/Basic vs Pro</li>
+<li>Platform Development Support</li>
+<li>Unity's Audio Engine based on FMOD</li>
+<li>Filtering/Effects<ul>
+<li>HiPass</li>
+<li>LowPass</li>
+<li>Echo</li>
+<li>Distortion</li>
+<li>Chorus</li>
+<li>Reverb</li>
+<li>Reverb Zone</li>
+</ul>
+</li>
+<li>How sound works in Unity<ul>
+<li>Audio Listener and Audio Source</li>
+<li>Triggering audio sources<ul>
+<li>mostly need to be in code</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-12-basic-audio-in-unity-3d">Level 12 - Basic Audio in Unity 3D<a class="headerlink" href="#level-12-basic-audio-in-unity-3d" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Importing Sound</li>
+<li>Import Settings<ul>
+<li>Native vs Compressed modes<ul>
+<li>decompress on load</li>
+<li>compressed in memory</li>
+<li>stream from disc</li>
+</ul>
+</li>
+<li>3D vs 2D</li>
+<li>Convert to Mono</li>
+</ul>
+</li>
+<li>Putting a Sound into Gamespace<ul>
+<li>add AudioSource to objects</li>
+</ul>
+</li>
+<li>AudioSource component settings<ul>
+<li>Mute</li>
+<li>Bypass</li>
+<li>Play on awake</li>
+<li>loop</li>
+<li>priority</li>
+<li>volume</li>
+<li>pitch</li>
+</ul>
+</li>
+<li>3D sound settings<ul>
+<li>min distance</li>
+<li>max distance</li>
+<li>volume curve<ul>
+<li>linear </li>
+<li>logorithmic</li>
+</ul>
+</li>
+<li>doppler level</li>
+<li>pan</li>
+<li>spread<ul>
+<li>used for surround</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Triggering a sound in Unity<ul>
+<li>add AudioSource to Box Collider "Is Trigger" option</li>
+</ul>
+</li>
+<li>Scripting example</li>
+</ul>
+<h2 id="level-13-web-and-mobile-games">Level 13 - Web and Mobile Games<a class="headerlink" href="#level-13-web-and-mobile-games" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Structure of iOS<ul>
+<li>Core OS - containe Darwin kernel and vital system extensions</li>
+<li>Core Services - handles services suck as in-App purchasing and XML support</li>
+<li>Media Layer - modeia-oriented frameworks such as Core Audio and Core Display</li>
+<li>Cocoa Touch - multitasking, touch-based imput, high level system services</li>
+</ul>
+</li>
+<li>iOS Audio Specifics<ul>
+<li>32 simultaneous streams available</li>
+<li>standard format is .CAF</li>
+</ul>
+</li>
+<li>Sound on Android<ul>
+<li>runs on Linux Kernel, needs OpenSL ES to run</li>
+</ul>
+</li>
+<li>Mixing Audio for Small Format Delivery<ul>
+<li>Use harmonicly rich tones<ul>
+<li>not sine waves</li>
+</ul>
+</li>
+<li>Make sure Low EQ sounds have high EQ components<ul>
+<li>Like, kick fundemental vs beater head</li>
+</ul>
+</li>
+<li>HTML Audio</li>
+</ul>
+</li>
+</ul>
+<h2 id="level-14-jobs-in-game-audio">Level 14 - Jobs in Game Audio<a class="headerlink" href="#level-14-jobs-in-game-audio" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Grand Theory of Adaptaion<ol>
+<li>Quality</li>
+<li>Perseverance</li>
+<li>Parallel Movement</li>
+<li>Conceptual Continuity</li>
+<li>Tell the world</li>
+<li>Critical Mass</li>
+</ol>
+</li>
+<li>Questions<ul>
+<li>Music or Sound?</li>
+<li>Programming experience or interest?</li>
+<li>Interested in evolving sound?</li>
+<li>Good at networking?</li>
+</ul>
+</li>
+<li>Marketing Yourself <ul>
+<li>How to create website</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
+      
+    
+  </body>
+</html>
