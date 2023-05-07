@@ -1,4 +1,4 @@
-- [[index|Home]]
+- [[Game 231 index|Home]]
 - [[Game 231 Week 04|Previous Week]]
 - [[Game 231 Week 06|Next Week]]
 

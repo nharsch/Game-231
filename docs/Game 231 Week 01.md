@@ -1,4 +1,4 @@
-- [[index|Home]]
+- [[Game 231 index|Home]]
 - [[Game 231 Week 02|Next Week]]
 
 # Week 1 - 1/18/23

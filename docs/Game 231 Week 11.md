@@ -54,6 +54,7 @@ Compiles your FMOD banks/events to usuable packages for Unity to use.
 	
 ## Assignment
 ### Reading
+- [[The Essential Guide to Game Audio Book Notes#Level 8 - Middleware]]
 - [FMOD Studio Concepts](https://fmod.com/resources/documentation-studio?version=2.02&page=fmod-studio-concepts.html)
 - [FMOD Events](https://fmod.com/resources/documentation-studio?version=2.02&page=authoring-events.html)
 
@@ -62,8 +63,8 @@ Compiles your FMOD banks/events to usuable packages for Unity to use.
 	- Try playing with “Vehicles -> Car Engine” example 
 	- Try playing with the “Character -> Player Footsteps” project. 
 - These are great intros to what FMOD will do with parameter values.
-
+- If you're really ambitious, try this full tutorial: https://www.fmod.com/docs/2.00/unity/integration-tutorial.html
+- [x] 
 ### Project 2: Footsteps Project - ~Due week 12~ Due Week 15
-[Project 2 Repo](https://github.com/APUGames/Game-220-Project-2-Footsteps)
-  - record footsteps on multiple surfaces
-  - looping
+[Project 2](https://canvas.apu.edu/courses/45722/assignments/798504)
+  - record or source footsteps on multiple surfaces
